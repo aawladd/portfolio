@@ -3,56 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YouTube & Blogs | Md Awlad Hossain</title>
-  <meta name="description" content="YouTube channel, project explainers, technical blogs, and communication content." />
+  <meta name="theme-color" content="#08111f" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <title>YouTube & Blog | Md Awlad Hossain</title>
+  <meta name="description" content="YouTube features, blogs, and technical communication for Md Awlad Hossain." />
 </head>
 <body data-page="youtube">
+  <div class="site-noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="grid-overlay"></div>
   <div id="site-header"></div>
 
   <main>
-    <section class="page-hero section surface-muted">
-      <div class="container narrow reveal">
-        <span class="eyebrow">YouTube & Blogs</span>
-        <h1>Project communication, educational videos, and technical writing</h1>
-        <p class="lead">A single place to showcase YouTube content, project descriptions, experiment notes, and blog-style writeups.</p>
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-statement reveal">
+          <span class="eyebrow">YouTube & Blog</span>
+          <h1>Technical communication, project storytelling, and public-facing academic work</h1>
+          <p class="lead">Use this page to document projects, explain methods, share experiments, and build visibility with students and the broader technical community.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-column-section">
-        <div class="reveal">
-          <span class="eyebrow">Channel Purpose</span>
-          <h2>Why this page matters</h2>
-          <p>
-            This page helps professors see outreach, continuity, and project depth, while students see accessible learning material and practical experimentation. It turns your website into an active academic and educational hub.
-          </p>
-          <a class="btn btn-primary" href="#">Add Your YouTube Channel Link</a>
+    <section class="section-tight">
+      <div class="container layout-2">
+        <div class="channel-panel reveal">
+          <span class="eyebrow">Why this page matters</span>
+          <h2>Show continuity, communication, and educational reach</h2>
+          <p>This section helps professors see active engagement and project depth, while students see approachable technical explanations and learning resources.</p>
+          <div class="panel-actions">
+            <a class="btn btn-primary" data-profile="youtube-link" href="#">Add YouTube channel link</a>
+          </div>
         </div>
-        <div class="glass-panel reveal">
-          <h3>What to share here</h3>
+        <div class="data-panel reveal delay-1">
+          <span class="eyebrow">Content ideas</span>
           <ul class="clean-list">
             <li>Project walkthroughs and demos</li>
-            <li>Code explanation videos</li>
-            <li>Experiment results and lab progress</li>
+            <li>Coding tutorials and experiment explanation</li>
             <li>Short research blogs and engineering notes</li>
+            <li>Progress reports on active prototypes</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section surface-muted">
+    <section class="section surface">
       <div class="container">
         <div class="split-head reveal">
           <div>
-            <span class="eyebrow">Videos</span>
-            <h2>Featured YouTube content</h2>
+            <span class="eyebrow">Featured videos</span>
+            <h2>YouTube content blocks</h2>
           </div>
+          <p>Replace each placeholder with a real video or playlist link.</p>
         </div>
-        <div id="video-grid" class="card-grid three-col"></div>
+        <div id="video-grid" class="card-grid grid-3"></div>
       </div>
     </section>
 
@@ -61,19 +70,20 @@
         <div class="split-head reveal">
           <div>
             <span class="eyebrow">Writing</span>
-            <h2>Blogs and project notes</h2>
+            <h2>Blogs, technical notes, and project write-ups</h2>
           </div>
         </div>
-        <div id="blog-grid" class="card-grid three-col"></div>
+        <div id="blog-grid" class="card-grid grid-3"></div>
       </div>
     </section>
   </main>
 
   <div id="site-footer"></div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="assets/js/site-data.js"></script>
   <script src="assets/js/layout.js"></script>
   <script src="assets/js/main.js"></script>
+  
 </body>
 </html>

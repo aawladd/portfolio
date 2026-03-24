@@ -3,44 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications | Md Awlad Hossain</title>
-  <meta name="description" content="Selected publications, manuscripts, and research outputs." />
+  <meta name="theme-color" content="#08111f" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Publications | Md Awlad Hossain</title>
+  <meta name="description" content="Publications and scholarly outputs for Md Awlad Hossain." />
 </head>
 <body data-page="publications">
+  <div class="site-noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="grid-overlay"></div>
   <div id="site-header"></div>
 
   <main>
-    <section class="page-hero section surface-muted">
-      <div class="container narrow reveal">
-        <span class="eyebrow">Publications</span>
-        <h1>Publications, manuscripts, and scholarly output</h1>
-        <p class="lead">Add your journal articles, conference papers, preprints, book chapters, and ongoing manuscripts here.</p>
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-statement reveal">
+          <span class="eyebrow">Publications</span>
+          <h1>Scholarly outputs, manuscripts, and research visibility</h1>
+          <p class="lead">Use this page for journal articles, conference papers, preprints, theses, book chapters, and major technical reports.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal left-align">
-          <span class="eyebrow">Formatting</span>
-          <h2>Use this page as your academic evidence layer</h2>
-          <p>
-            Each item can include venue, year, status, abstract note, and external links such as DOI, PDF, GitHub, or presentation slides.
-          </p>
+    <section class="section-tight">
+      <div class="container layout-2">
+        <div class="statement-card reveal">
+          <span class="eyebrow">Why this page matters</span>
+          <h2>Clear, scan-friendly presentation of your research record</h2>
+          <p>Professors and academic reviewers often scan publication pages quickly. This design makes title, venue, year, status, and access links easy to identify while preserving a polished academic look.</p>
         </div>
-        <div id="publication-list" class="publication-list"></div>
+        <div class="data-panel reveal delay-1">
+          <span class="eyebrow">Good practice</span>
+          <ul class="clean-list">
+            <li>Keep author names and venue formatting consistent</li>
+            <li>Link PDF, DOI, code, and data when available</li>
+            <li>Use a one-line note to state the contribution clearly</li>
+            <li>Separate drafts from published work with status labels</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface">
+      <div class="container">
+        <div class="split-head reveal">
+          <div>
+            <span class="eyebrow">Publication list</span>
+            <h2>Selected and ongoing work</h2>
+          </div>
+          <p>Replace the sample entries below with your real outputs.</p>
+        </div>
+        <div id="publication-list" class="card-grid grid-2"></div>
       </div>
     </section>
   </main>
 
   <div id="site-footer"></div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="assets/js/site-data.js"></script>
   <script src="assets/js/layout.js"></script>
   <script src="assets/js/main.js"></script>
+  
 </body>
 </html>

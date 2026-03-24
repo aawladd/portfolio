@@ -3,45 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Md Awlad Hossain</title>
-  <meta name="description" content="Selected research and engineering projects in simulation, robotics, AI, machine learning, scientific machine learning, and control." />
+  <meta name="theme-color" content="#08111f" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Projects | Md Awlad Hossain</title>
+  <meta name="description" content="Projects, prototypes, and research systems for Md Awlad Hossain." />
 </head>
 <body data-page="projects">
+  <div class="site-noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="grid-overlay"></div>
   <div id="site-header"></div>
 
   <main>
-    <section class="page-hero section surface-muted">
-      <div class="container narrow reveal">
-        <span class="eyebrow">Projects</span>
-        <h1>Research, engineering, and teaching-oriented projects</h1>
-        <p class="lead">This section is filterable and easy to grow as you publish more work, prototypes, blogs, and course-related builds.</p>
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-statement reveal">
+          <span class="eyebrow">Projects</span>
+          <h1>Research projects, prototypes, and technical systems</h1>
+          <p class="lead">This page is designed to look more like a serious research and lab portfolio than a generic project gallery.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section-tight">
       <div class="container">
-        <div class="project-toolbar reveal">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="Robotics">Robotics</button>
-          <button class="filter-btn" data-filter="Simulation">Simulation</button>
-          <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
-          <button class="filter-btn" data-filter="Control">Control</button>
-          <button class="filter-btn" data-filter="SciML">SciML</button>
+        <div class="filter-wrap reveal">
+          <div class="split-head" style="margin-bottom:0;">
+            <div>
+              <span class="eyebrow">Filter projects</span>
+              <h2>Browse by theme</h2>
+            </div>
+            <p>Select a category to present work areas more clearly during academic review or student browsing.</p>
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="SciML">SciML</button>
+            <button class="filter-btn" data-filter="Simulation">Simulation</button>
+            <button class="filter-btn" data-filter="Robotics">Robotics</button>
+            <button class="filter-btn" data-filter="Control">Control</button>
+            <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
+            <button class="filter-btn" data-filter="Communication">Communication</button>
+          </div>
         </div>
-        <div id="project-grid" class="card-grid three-col"></div>
+        <div id="project-grid" class="card-grid grid-3"></div>
       </div>
     </section>
   </main>
 
   <div id="site-footer"></div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="assets/js/site-data.js"></script>
   <script src="assets/js/layout.js"></script>
   <script src="assets/js/main.js"></script>
+  
 </body>
 </html>

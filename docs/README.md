@@ -1,75 +1,78 @@
-# Academic Website for GitHub Pages
+# Premium Dark Academic Website
 
-This is a professional multi-page academic website built with **HTML, CSS, JavaScript, and jQuery**.
+A darker, more premium second version of your academic website designed for GitHub Pages.
 
-## Included Pages
-- Home
-- Research
-- Publications
-- Teaching
-- Projects
-- YouTube & Blogs
-- Contact
-- 404 page
+## What changed in this version
 
-## Why this structure works
-- Professional enough for professors, collaborators, and academic committees
-- Clear enough for students and mentees
-- Easy to maintain over time
-- Ready for GitHub Pages deployment
+- Dark, premium visual identity
+- More polished academic/lab-style layout
+- Better card/block system with stronger spacing and metadata
+- Smoother reveal animations
+- Exact jQuery CDN requested by you:
+  `https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js`
+- Easy content editing from `assets/js/site-data.js`
+
+## Pages included
+
+- `index.html` — homepage
+- `research.html` — research vision and themes
+- `publications.html` — publication list
+- `teaching.html` — teaching and mentorship
+- `projects.html` — projects with category filter
+- `youtube.html` — YouTube and blog page
+- `contact.html` — academic links and CV
+- `404.html` — custom not found page
 
 ## Main files to edit
-### Personal content
-Open:
+
+### 1) Change your profile content
+Edit:
 - `assets/js/site-data.js`
 
-This is where you can update:
-- research areas
-- projects
+Update:
+- name
+- title
+- subtitle
+- email
+- CV file path
+- YouTube channel link
 - publications
-- courses
-- videos
-- blogs
+- projects
+- blog posts
+- video links
+- academic profile links
 
-### Page text
-Open these files directly if you want to customize wording:
-- `index.html`
-- `research.html`
-- `teaching.html`
-- `contact.html`
+### 2) Add your CV
+Put your PDF inside:
+- `assets/files/`
 
-## Add your CV
-1. Put your CV PDF inside `assets/files/`
-2. Update the CV button link in `contact.html`
+Then change this line in `assets/js/site-data.js`:
+- `cvFile: "assets/files/replace-with-your-cv.pdf"`
 
-## Add your photo
-You can either:
-- keep the text-based profile badge, or
-- replace it with an image in the homepage profile section
+### 3) Change colors or layout
+Edit:
+- `assets/css/style.css`
 
 ## GitHub Pages deployment
-### Option 1: Deploy from branch
-1. Create a GitHub repository
+
+1. Create a new GitHub repository
 2. Upload all files from this project
-3. Go to **Settings > Pages**
-4. Under **Build and deployment**, choose **Deploy from a branch**
-5. Select the branch (usually `main`) and the root folder (`/`)
-6. Save
+3. Commit and push
+4. In GitHub repository settings, open **Pages**
+5. Set the source to the main branch root folder
+6. Save and wait for the site URL
 
-### Option 2: Use a custom domain later
-You can connect a custom domain after the site is live.
+## Good next upgrades
 
-## Tips for a stronger academic website
-- Add a professional headshot
-- Link Google Scholar, ORCID, ResearchGate, GitHub, LinkedIn, and YouTube
-- Keep project cards concise and evidence-based
-- Add publication links whenever possible
-- Update the homepage every time a new paper or major project is completed
+- Add your real profile image
+- Add a Google Scholar button on the homepage
+- Add publication filters by year/type
+- Add a downloadable research statement PDF
+- Add embedded YouTube thumbnails
+- Add a simple blog post template folder later
 
-## Recommended next edits
-- Replace placeholder publication entries
-- Add real project descriptions
-- Add your YouTube channel link
-- Add your contact email
-- Add your CV and academic links
+## Notes
 
+- This is a fully static site and works well with GitHub Pages
+- No build tools are needed
+- jQuery is included only for lightweight UI behavior and easy editing
