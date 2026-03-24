@@ -1,0 +1,6 @@
+Replace this file with your real CV PDF.
+
+Suggested step:
+1. Delete this file.
+2. Add your CV as something like: awlad-hossain-cv.pdf
+3. Update the link in contact.html so the Download CV button points to the correct PDF.
