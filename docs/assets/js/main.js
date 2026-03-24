@@ -38,14 +38,18 @@ function projectCard(project) {
       </div>
       <h3>${escapeHtml(project.title)}</h3>
       <p>${escapeHtml(project.text)}</p>
-      <div class="card-metrics">
+      <div class="card-metrics project-metrics-3">
         <div class="card-metric">
-          <strong>Focus</strong>
-          <span class="micro-copy">${escapeHtml(project.focus)}</span>
+          <strong>Research focus</strong>
+          <span class="micro-copy">${escapeHtml(project.focus || '')}</span>
         </div>
         <div class="card-metric">
-          <strong>Mode</strong>
-          <span class="micro-copy">${escapeHtml(project.mode)}</span>
+          <strong>Method</strong>
+          <span class="micro-copy">${escapeHtml(project.method || project.mode || '')}</span>
+        </div>
+        <div class="card-metric">
+          <strong>Output</strong>
+          <span class="micro-copy">${escapeHtml(project.output || '')}</span>
         </div>
       </div>
       <div class="tag-list">${tags}</div>
@@ -74,7 +78,8 @@ function publicationCard(pub) {
 }
 
 function simpleCard(item, label) {
-  const links = item.url ? `<div class="card-links"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">Open</a></div>` : '';
+  const linkText = item.linkLabel || 'Open';
+  const links = item.url ? `<div class="card-links"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(linkText)}</a></div>` : '';
   return `
     <article class="showcase-card reveal">
       <div class="card-kicker">${escapeHtml(label)}</div>
@@ -136,6 +141,10 @@ $(function () {
 
     if ($('#publication-list').length) {
       $('#publication-list').html(siteData.publications.map(publicationCard).join(''));
+    }
+
+    if ($('#publication-preview').length) {
+      $('#publication-preview').html(siteData.publications.slice(0, 2).map(publicationCard).join(''));
     }
 
     if ($('#teaching-courses').length) {

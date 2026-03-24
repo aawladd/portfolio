@@ -2,8 +2,8 @@ const siteData = {
   profile: {
     name: "Md Awlad Hossain",
     title: "Researcher & Academic Teacher",
-    subtitle: "I work across numerical simulation, robotics, AI, machine learning, deep learning, scientific machine learning, and control theory to build rigorous and usable intelligent systems.",
-    tagline: "An academic website designed to speak clearly to professors, students, and collaborators.",
+    subtitle: "My work integrates numerical simulation, robotics, artificial intelligence, machine learning, deep learning, scientific machine learning, and control theory to build reliable, interpretable, and practically useful intelligent systems.",
+    tagline: "This website presents research, teaching, publications, projects, and technical communication in a more scholarly and research-centered format.",
     email: "your-email@example.com",
     cvFile: "assets/files/replace-with-your-cv.pdf",
     youtubeUrl: "#",
@@ -18,63 +18,63 @@ const siteData = {
     ]
   },
   highlights: [
-    { value: "06+", label: "Core research themes" },
-    { value: "03", label: "Audience paths: faculty, students, collaborators" },
-    { value: "∞", label: "Ideas, prototypes, and research directions" }
+    { value: "06", label: "Primary research themes" },
+    { value: "03", label: "Main audiences: faculty, students, collaborators" },
+    { value: "01", label: "Integrated academic home for research and teaching" }
   ],
   researchAreas: [
     {
       kicker: "Computational science",
       title: "Numerical Simulation",
-      text: "Simulation-driven analysis for engineering, environmental, and scientific systems where model fidelity and computational clarity matter.",
+      text: "Computational modeling and simulation for scientific and engineering systems where physical fidelity, numerical reasoning, and interpretable outputs are essential.",
       metrics: [
-        { label: "Methods", value: "Modeling, discretization, analysis" },
-        { label: "Value", value: "Grounded insight for complex systems" }
+        { label: "Research lens", value: "Modeling, discretization, analysis" },
+        { label: "Typical outputs", value: "Simulation workflows, diagnostics, predictive studies" }
       ]
     },
     {
-      kicker: "Intelligent physical systems",
+      kicker: "Embodied intelligence",
       title: "Robotics",
-      text: "Embodied systems that combine actuation, sensing, embedded control, and learning for practical experimental research.",
+      text: "Robotic systems that connect sensing, actuation, embedded hardware, control logic, and learning-based decision making in practical experimental settings.",
       metrics: [
-        { label: "Methods", value: "Embedded systems, autonomy, experiments" },
-        { label: "Value", value: "Bridges theory with real hardware" }
+        { label: "Research lens", value: "Hardware, autonomy, system integration" },
+        { label: "Typical outputs", value: "Prototypes, experiments, demonstrations" }
       ]
     },
     {
       kicker: "Data-driven intelligence",
-      title: "Artificial Intelligence & ML",
-      text: "Predictive pipelines for structured and scientific data, designed to balance model accuracy with interpretability and robustness.",
+      title: "Artificial Intelligence & Machine Learning",
+      text: "Machine learning pipelines for structured scientific and engineering data, with attention to evaluation quality, robustness, and application relevance.",
       metrics: [
-        { label: "Methods", value: "Feature learning, forecasting, evaluation" },
-        { label: "Value", value: "Actionable models for applied problems" }
+        { label: "Research lens", value: "Forecasting, learning, evaluation" },
+        { label: "Typical outputs", value: "Predictive models, analysis pipelines" }
       ]
     },
     {
-      kicker: "Neural modeling",
+      kicker: "Neural computation",
       title: "Deep Learning",
-      text: "Sequence models, neural architectures, and representation learning tailored to engineering and scientific applications.",
+      text: "Neural architectures for temporal, spatial, and scientific datasets where representation learning and model capacity must be balanced with interpretability.",
       metrics: [
-        { label: "Methods", value: "Time series, spatial data, optimization" },
-        { label: "Value", value: "High-capacity models with structure" }
+        { label: "Research lens", value: "Sequence models, optimization, feature learning" },
+        { label: "Typical outputs", value: "Benchmarks, ablations, trained systems" }
       ]
     },
     {
-      kicker: "Physics-aware learning",
+      kicker: "Physics-aware intelligence",
       title: "Scientific Machine Learning",
-      text: "Learning systems that respect physical principles, equations, simulation outputs, and domain constraints.",
+      text: "Hybrid modeling approaches that combine data-driven learning with physical structure, governing equations, or simulation constraints.",
       metrics: [
-        { label: "Methods", value: "PINNs, hybrid models, simulation coupling" },
-        { label: "Value", value: "Credible and efficient data-science workflows" }
+        { label: "Research lens", value: "PINNs, hybrid models, simulation coupling" },
+        { label: "Typical outputs", value: "Trustworthy models for scientific tasks" }
       ]
     },
     {
-      kicker: "Dynamic systems",
+      kicker: "Dynamic decision systems",
       title: "Control Theory",
-      text: "Model-based and learning-enhanced control strategies for robots and dynamic engineering systems.",
+      text: "Model-based and learning-augmented control for dynamic systems, with emphasis on stability, adaptation, and reliable performance in real settings.",
       metrics: [
-        { label: "Methods", value: "Feedback, stability, adaptive policies" },
-        { label: "Value", value: "Reliable decision and motion behavior" }
+        { label: "Research lens", value: "Feedback, stability, adaptive control" },
+        { label: "Typical outputs", value: "Controllers, experiments, validation studies" }
       ]
     }
   ],
@@ -83,9 +83,11 @@ const siteData = {
       title: "Physics-Informed Forecasting for Scientific Time Series",
       category: "SciML",
       status: "Active Research",
-      text: "A research direction that blends deep learning with physics-guided constraints to improve forecast credibility for structured temporal signals.",
+      text: "A research direction focused on improving predictive credibility by combining deep temporal models with physically informed constraints and structured evaluation.",
       focus: "Scientific forecasting",
-      mode: "Research + implementation",
+      mode: "Research design",
+      method: "Hybrid learning with physics-aware losses and ablation-based evaluation",
+      output: "Manuscript, code, figures, and comparative experiments",
       tags: ["Physics-informed", "Forecasting", "Sequence learning"],
       featured: true,
       links: [{ label: "Add project link", url: "#" }]
@@ -94,9 +96,11 @@ const siteData = {
       title: "Simulation-Driven Environmental Modeling Workflow",
       category: "Simulation",
       status: "Method Pipeline",
-      text: "A workflow for numerical simulation, post-processing, and analytical interpretation of spatiotemporal environmental systems.",
-      focus: "Modeling and analysis",
-      mode: "Simulation + data workflow",
+      text: "A structured workflow for numerical simulation, post-processing, visualization, and interpretation of spatiotemporal environmental systems.",
+      focus: "Scientific computing",
+      mode: "Computational workflow",
+      method: "Simulation setup, diagnostics, rainfall analysis, and publication-grade visualization",
+      output: "Processed datasets, figures, scripts, and methodological notes",
       tags: ["Scientific computing", "Model evaluation", "Environmental data"],
       featured: true,
       links: [{ label: "Add details", url: "#" }]
@@ -105,9 +109,11 @@ const siteData = {
       title: "Robotics Testbed for Learning-Based Control",
       category: "Robotics",
       status: "Prototype",
-      text: "An experimental platform for embedded robotics, control design, sensing, and AI-assisted autonomy research.",
+      text: "An experimental robotics platform for integrating embedded systems, control, sensing, and learning-based autonomy.",
       focus: "Embodied intelligence",
-      mode: "Hardware + control",
+      mode: "Experimental system",
+      method: "Robot integration, controller development, hardware experiments, and iterative validation",
+      output: "Prototype platform, videos, and technical reports",
       tags: ["Robotics", "Embedded systems", "Autonomy"],
       featured: true,
       links: [{ label: "Video demo", url: "#" }]
@@ -117,20 +123,24 @@ const siteData = {
       category: "Control",
       status: "Concept Development",
       statusTone: "draft",
-      text: "A control-oriented line of work combining principled dynamic models with neural approximators for adaptive performance.",
+      text: "A control-oriented project exploring how dynamic models and neural approximators can work together for adaptive and robust behavior.",
       focus: "Learning-based control",
-      mode: "Theory + experiments",
+      mode: "Theory + experiment planning",
+      method: "Model-based structure combined with learned residual or policy modules",
+      output: "Concept note, benchmarks, and prototype controller",
       tags: ["Control", "Adaptive systems", "Optimization"],
       featured: false,
       links: [{ label: "Add manuscript", url: "#" }]
     },
     {
-      title: "Academic Communication Hub",
+      title: "Academic Communication and Research Portfolio System",
       category: "Communication",
       status: "Deployed Design",
-      text: "A website system for presenting research, teaching, projects, publications, blogs, and technical videos in one coherent academic identity.",
+      text: "A long-term academic website architecture for presenting research, teaching, publications, media, and project documentation in one coherent identity.",
       focus: "Scholarly communication",
-      mode: "Web project",
+      mode: "Digital academic infrastructure",
+      method: "Static site architecture with curated research-first information design",
+      output: "Live site, editable codebase, and update-ready content blocks",
       tags: ["Portfolio", "GitHub Pages", "Outreach"],
       featured: false,
       links: [{ label: "Live site", url: "#" }]
@@ -139,9 +149,11 @@ const siteData = {
       title: "Scientific Data Modeling with Deep Networks",
       category: "AI/ML",
       status: "Ongoing",
-      text: "Modeling structured scientific data with neural networks while maintaining careful evaluation and domain relevance.",
+      text: "A line of work on learning from structured scientific datasets while preserving good experimental practice and domain relevance.",
       focus: "Applied machine learning",
-      mode: "Data + models",
+      mode: "Model development",
+      method: "Feature design, deep learning baselines, evaluation, and interpretation",
+      output: "Model comparisons, reproducible scripts, and research write-up",
       tags: ["Machine learning", "Deep learning", "Scientific data"],
       featured: false,
       links: [{ label: "Code repo", url: "#" }]
@@ -154,7 +166,7 @@ const siteData = {
       venue: "Journal Name • Volume, Issue, Pages",
       year: "2026",
       status: "Published / Under Review",
-      note: "Use one sentence to clarify the main methodological contribution or application impact.",
+      note: "State the core contribution clearly: problem, method, and why the result matters.",
       links: [
         { label: "PDF", url: "#" },
         { label: "DOI", url: "#" },
@@ -168,7 +180,7 @@ const siteData = {
       year: "2025",
       status: "Preprint / In Progress",
       statusTone: "draft",
-      note: "Summarize the technical idea, task, or novelty in a clear sentence that a professor can scan quickly.",
+      note: "Use one sentence to explain the methodological novelty or system contribution.",
       links: [
         { label: "Abstract", url: "#" },
         { label: "Slides", url: "#" }
@@ -181,7 +193,7 @@ const siteData = {
       year: "2024",
       status: "Draft",
       statusTone: "draft",
-      note: "Keep formatting consistent so the page continues to look polished as your publication list grows.",
+      note: "Keep this space for thesis work, technical reports, survey manuscripts, or substantial project documentation.",
       links: [
         { label: "Details", url: "#" }
       ]
@@ -189,83 +201,88 @@ const siteData = {
   ],
   courses: [
     {
-      kicker: "Teaching area",
+      kicker: "Course theme",
       title: "Numerical Methods and Simulation",
-      text: "Modeling, computation, discretization, numerical reasoning, and interpretation of computational outputs."
+      text: "Courses and mentoring around modeling, discretization, computation, and interpretation of numerical results in scientific settings."
     },
     {
-      kicker: "Teaching area",
+      kicker: "Course theme",
       title: "Robotics and Intelligent Systems",
-      text: "Robotic platforms, control logic, embedded systems, sensing, and autonomous behavior with hands-on grounding."
+      text: "Teaching that connects robot platforms, sensing, embedded implementation, system integration, and autonomy-oriented thinking."
     },
     {
-      kicker: "Teaching area",
+      kicker: "Course theme",
       title: "Artificial Intelligence and Machine Learning",
-      text: "Modern ML concepts, implementation workflows, model evaluation, and research-minded problem solving."
+      text: "Conceptual and applied teaching in ML workflows, experimentation, evaluation, and technical problem solving."
     },
     {
-      kicker: "Teaching area",
+      kicker: "Course theme",
       title: "Deep Learning for Engineering",
-      text: "Neural architectures, training workflows, experiments, and critical evaluation for applied technical use."
+      text: "Neural architectures, training practice, experiments, and evidence-based comparison for engineering applications."
     },
     {
-      kicker: "Teaching area",
+      kicker: "Course theme",
       title: "Scientific Machine Learning",
-      text: "Physics-aware learning, simulation-informed models, and hybrid data-science approaches for advanced learners."
+      text: "Physics-aware and simulation-aware learning concepts for advanced students interested in modern computational research."
     },
     {
-      kicker: "Teaching area",
+      kicker: "Course theme",
       title: "Control Systems",
-      text: "Feedback, dynamic systems, stability, and modern learning-augmented control strategies."
+      text: "Feedback, dynamic systems, stability, and modern learning-augmented control ideas presented in a structured way."
     }
   ],
   videos: [
     {
       title: "Replace with your YouTube channel or featured video",
-      type: "YouTube Feature",
-      text: "Use this card for a flagship video explaining a project, hardware demo, simulation workflow, or research prototype.",
-      url: "#"
+      type: "Featured video",
+      text: "Use this block for a flagship research demo, system walkthrough, or project explanation that represents your work well.",
+      url: "#",
+      linkLabel: "Watch video"
     },
     {
       title: "Technical explainer or coding walkthrough",
-      type: "Educational Video",
-      text: "A space for student-friendly explanations of experiments, robotics setups, modeling pipelines, or algorithm ideas.",
-      url: "#"
+      type: "Educational media",
+      text: "A place for videos that explain experiments, robotics integration, simulation workflows, or modeling pipelines for students.",
+      url: "#",
+      linkLabel: "Open feature"
     },
     {
       title: "Research log or lab update",
-      type: "Research Update",
-      text: "A regular update style entry for results, challenges, progress notes, and future directions.",
-      url: "#"
+      type: "Research communication",
+      text: "Use this area for concise updates on progress, negative results, design choices, and next steps in ongoing work.",
+      url: "#",
+      linkLabel: "View update"
     }
   ],
   blogs: [
     {
       title: "How I connect simulation with machine learning",
-      date: "Add date",
-      text: "A blog note reflecting on how your major research interests support one another in real projects.",
-      url: "#"
+      date: "Research note • Add date",
+      text: "A short essay explaining how your main research areas support one another within a coherent scholarly agenda.",
+      url: "#",
+      linkLabel: "Read note"
     },
     {
       title: "What students can learn from robotics experiments",
-      date: "Add date",
-      text: "A post that turns your technical work into approachable learning material for students and early researchers.",
-      url: "#"
+      date: "Teaching note • Add date",
+      text: "A note translating technical work into accessible lessons for students, project groups, or future supervisees.",
+      url: "#",
+      linkLabel: "Read note"
     },
     {
-      title: "A project write-up structure for academic websites",
-      date: "Add date",
-      text: "Use this for project narratives covering objective, method, implementation, result, and next steps.",
-      url: "#"
+      title: "A structure for writing research project pages",
+      date: "Method note • Add date",
+      text: "Use this for project write-ups covering objective, method, implementation, result, and future work in a scholarly style.",
+      url: "#",
+      linkLabel: "Read note"
     }
   ],
   contactLinks: [
     { label: "Email", value: "your-email@example.com", url: "mailto:your-email@example.com" },
-    { label: "Google Scholar", value: "Add your profile", url: "#" },
-    { label: "ORCID", value: "Add your ORCID", url: "#" },
-    { label: "ResearchGate", value: "Add your account", url: "#" },
-    { label: "GitHub", value: "Add your username", url: "#" },
-    { label: "LinkedIn", value: "Add your profile", url: "#" },
-    { label: "YouTube", value: "Add your channel", url: "#" }
+    { label: "Google Scholar", value: "Add profile link", url: "#" },
+    { label: "ORCID", value: "Add ORCID", url: "#" },
+    { label: "GitHub", value: "Add GitHub", url: "#" },
+    { label: "LinkedIn", value: "Add LinkedIn", url: "#" },
+    { label: "YouTube", value: "Add channel link", url: "#" }
   ]
 };
