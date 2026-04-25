@@ -20,6 +20,7 @@ function renderShell() {
   qsa("[data-linkedin]").forEach(el => { el.setAttribute("href", site.profile.profiles.linkedin || "#"); });
   qsa("[data-youtube]").forEach(el => { el.setAttribute("href", site.profile.profiles.youtube || "#"); });
   qsa("[data-researchgate]").forEach(el => { el.setAttribute("href", site.profile.profiles.researchgate || "#"); });
+  qsa("[data-facebook]").forEach(el => { el.setAttribute("href", site.profile.profiles.facebook || "#"); });
   qsa("[data-profile-photo]").forEach(el => {
     el.setAttribute("src", site.profile.avatar);
     el.setAttribute("alt", `${site.profile.name} profile picture`);

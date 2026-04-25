@@ -16,6 +16,7 @@ window.PORTFOLIO_DATA = {
       linkedin: "https://www.linkedin.com/in/md-awlad/",
       youtube: "https://www.youtube.com/FunctionalValue",
       researchgate: "https://www.researchgate.net/profile/Md-Hossain-1286?ev=hdr_xprf",
+      facebook: "https://www.facebook.com/aawladd"
     },
   },
   nav: [
