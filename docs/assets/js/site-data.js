@@ -1,288 +1,132 @@
-const siteData = {
+window.PORTFOLIO_DATA = {
   profile: {
     name: "Md Awlad Hossain",
-    title: "Researcher & Academic Teacher",
-    subtitle: "My work integrates numerical simulation, robotics, artificial intelligence, machine learning, deep learning, scientific machine learning, and control theory to build reliable, interpretable, and practically useful intelligent systems.",
-    tagline: "This website presents research, teaching, publications, projects, and technical communication in a more scholarly and research-centered format.",
-    email: "your-email@example.com",
-    cvFile: "assets/files/replace-with-your-cv.pdf",
-    youtubeUrl: "#",
-    roles: [
-      "Numerical Simulation",
-      "Robotics",
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Deep Learning",
-      "Scientific ML",
-      "Control Theory"
+    initials: "MAH",
+    role: "Applied Mathematics | Research & Teaching",
+    location: "Dhaka, Bangladesh",
+    email: "mdawlad.du@gmail.com",
+    phone: "+880 1776041967",
+    cv: "assets/files/Md_Awlad_Hossain_CV.pdf",
+    avatar: "assets/img/profile.svg",
+    tagline: "Applied mathematics researcher focused on scientific computing, intelligent systems, robotics, and control.",
+    profiles: {
+      scholar: "#",
+      orcid: "#",
+      github: "https://github.com/aawladd",
+      linkedin: "#",
+      youtube: "https://www.youtube.com/@FunctionalValue"
+    }
+  },
+  nav: [
+    { label: "Home", href: "index.html", page: "home" },
+    { label: "Research", href: "research.html", page: "research" },
+    { label: "Projects", href: "projects.html", page: "projects" },
+    { label: "Teaching", href: "teaching.html", page: "teaching" },
+    { label: "YouTube", href: "youtube.html", page: "youtube" },
+    { label: "Contact", href: "contact.html", page: "contact" }
+  ],
+  home: {
+    eyebrow: "Academic portfolio",
+    title: "Applied Mathematics & Intelligent Systems",
+    summary: "Research, projects, teaching, and technical work in simulation, scientific machine learning, robotics, and control.",
+    highlights: ["Simulation", "Robotics", "Scientific ML", "AI/Deep Learning", "Meteorology", "Control"],
+    facts: [
+      { label: "Focus", value: "Scientific computing, AI, robotics, and control" },
+      { label: "Methods", value: "Simulation, deep learning, SciML, and embedded systems" },
+      { label: "Website", value: "Research profile, projects, teaching, and contact" }
     ]
   },
-  highlights: [
-    { value: "06", label: "Primary research themes" },
-    { value: "03", label: "Main audiences: faculty, students, collaborators" },
-    { value: "01", label: "Integrated academic home for research and teaching" }
-  ],
-  researchAreas: [
-    {
-      kicker: "Computational science",
-      title: "Numerical Simulation",
-      text: "Computational modeling and simulation for scientific and engineering systems where physical fidelity, numerical reasoning, and interpretable outputs are essential.",
-      metrics: [
-        { label: "Research lens", value: "Modeling, discretization, analysis" },
-        { label: "Typical outputs", value: "Simulation workflows, diagnostics, predictive studies" }
-      ]
-    },
-    {
-      kicker: "Embodied intelligence",
-      title: "Robotics",
-      text: "Robotic systems that connect sensing, actuation, embedded hardware, control logic, and learning-based decision making in practical experimental settings.",
-      metrics: [
-        { label: "Research lens", value: "Hardware, autonomy, system integration" },
-        { label: "Typical outputs", value: "Prototypes, experiments, demonstrations" }
-      ]
-    },
-    {
-      kicker: "Data-driven intelligence",
-      title: "Artificial Intelligence & Machine Learning",
-      text: "Machine learning pipelines for structured scientific and engineering data, with attention to evaluation quality, robustness, and application relevance.",
-      metrics: [
-        { label: "Research lens", value: "Forecasting, learning, evaluation" },
-        { label: "Typical outputs", value: "Predictive models, analysis pipelines" }
-      ]
-    },
-    {
-      kicker: "Neural computation",
-      title: "Deep Learning",
-      text: "Neural architectures for temporal, spatial, and scientific datasets where representation learning and model capacity must be balanced with interpretability.",
-      metrics: [
-        { label: "Research lens", value: "Sequence models, optimization, feature learning" },
-        { label: "Typical outputs", value: "Benchmarks, ablations, trained systems" }
-      ]
-    },
-    {
-      kicker: "Physics-aware intelligence",
-      title: "Scientific Machine Learning",
-      text: "Hybrid modeling approaches that combine data-driven learning with physical structure, governing equations, or simulation constraints.",
-      metrics: [
-        { label: "Research lens", value: "PINNs, hybrid models, simulation coupling" },
-        { label: "Typical outputs", value: "Trustworthy models for scientific tasks" }
-      ]
-    },
-    {
-      kicker: "Dynamic decision systems",
-      title: "Control Theory",
-      text: "Model-based and learning-augmented control for dynamic systems, with emphasis on stability, adaptation, and reliable performance in real settings.",
-      metrics: [
-        { label: "Research lens", value: "Feedback, stability, adaptive control" },
-        { label: "Typical outputs", value: "Controllers, experiments, validation studies" }
-      ]
-    }
+  research: {
+    statement: "My work connects applied mathematics, simulation, scientific machine learning, robotics, and control for practical scientific and engineering problems.",
+    longStatement: [
+      "I develop and document computational workflows where models, data, and implementation meet.",
+      "The goal is clear methodology, reproducible experiments, and results that can support publication, teaching, and real systems."
+    ],
+    themes: [
+      { title: "Simulation and scientific computation", label: "Theme 01", text: "Computational workflows and analysis pipelines for scientifically meaningful modeling, prediction, interpretation, and visualization.", tags: ["Numerical simulation", "WRF", "Forecasting", "Visualization"] },
+      { title: "Robotics and intelligent systems", label: "Theme 02", text: "Embodied systems where sensing, low-level control, computation, and learning meet in practical experiments.", tags: ["Robotics", "Embedded systems", "ROS2", "Control"] },
+      { title: "Scientific machine learning and control", label: "Theme 03", text: "Physical structure, machine learning, and control-theoretic thinking for more reliable intelligent systems.", tags: ["PINN", "DeepONet", "RL", "Hybrid models"] },
+      { title: "Weather, rainfall, and meteorological AI", label: "Theme 04", text: "Modeling and data-driven analysis for rainfall, lightning proxies, forecast interpretation, and publication-quality weather diagnostics.", tags: ["WRF", "GPM", "Rainfall", "Meteorology"] }
+    ],
+    methods: [
+      "Simulation-aware and physics-aware machine learning",
+      "Robotics experiments grounded in sensing and control",
+      "Deep learning for structured scientific and engineering data",
+      "Control-theoretic thinking for trustworthy intelligent behavior",
+      "Publication-quality evaluation, visualization, and reproducibility"
+    ],
+    questions: [
+      { title: "How can scientific structure improve machine learning performance and trust?", text: "This includes physics-informed losses, hybrid models, domain-aware features, and evaluation strategies beyond black-box prediction." },
+      { title: "How can robotics systems combine learning with reliable control?", text: "The goal is to connect sensing, embedded implementation, and control strategies with intelligent adaptation that remains stable and useful." },
+      { title: "How can simulation outputs support more effective intelligent systems?", text: "Simulation data can act as structure, supervision, prior knowledge, or benchmarking evidence for learning and analysis pipelines." },
+      { title: "How can research be communicated clearly across audiences?", text: "Strong academic work should be documented through clear writing, reproducible code, teaching materials, and technical outreach." }
+    ],
+    workflow: [
+      "Problem framing through scientific, engineering, or system-level questions",
+      "Model design using simulation, learning, control, or hybrid methods",
+      "Implementation with code, experiments, visualization, and documentation",
+      "Evaluation through comparisons, ablations, interpretation, and technical writing"
+    ]
+  },
+  publications: [
+    { year: "Ongoing", type: "Manuscript", title: "Physics-informed neural operator pipeline for spatially heterogeneous simulation environments", venue: "In preparation", description: "A research manuscript focused on environment generation, operator learning, and publication-quality validation for scientific machine learning.", tags: ["PINO", "SciML", "Uncertainty", "Simulation"] },
+    { year: "Ongoing", type: "Manuscript", title: "WRF-based rainfall and lightning diagnostics over Bangladesh", venue: "In preparation", description: "A meteorological simulation study using nested domains, rainfall diagnostics, satellite comparison, and lightning proxy analysis.", tags: ["WRF", "GPM", "Bangladesh", "Rainfall"] },
+    { year: "Ongoing", type: "Research note", title: "PINN, reinforcement learning, and control for mobile robotics", venue: "Project documentation", description: "A control-oriented robotics workflow combining embedded sensing, low-level control, and learning-based high-level decision systems.", tags: ["Robotics", "PINN", "RL", "Control"] }
   ],
   projects: [
-    {
-      title: "Physics-Informed Forecasting for Scientific Time Series",
-      category: "SciML",
-      status: "Active Research",
-      text: "A research direction focused on improving predictive credibility by combining deep temporal models with physically informed constraints and structured evaluation.",
-      focus: "Scientific forecasting",
-      mode: "Research design",
-      method: "Hybrid learning with physics-aware losses and ablation-based evaluation",
-      output: "Manuscript, code, figures, and comparative experiments",
-      tags: ["Physics-informed", "Forecasting", "Sequence learning"],
-      featured: true,
-      links: [{ label: "Add project link", url: "#" }]
-    },
-    {
-      title: "Simulation-Driven Environmental Modeling Workflow",
-      category: "Simulation",
-      status: "Method Pipeline",
-      text: "A structured workflow for numerical simulation, post-processing, visualization, and interpretation of spatiotemporal environmental systems.",
-      focus: "Scientific computing",
-      mode: "Computational workflow",
-      method: "Simulation setup, diagnostics, rainfall analysis, and publication-grade visualization",
-      output: "Processed datasets, figures, scripts, and methodological notes",
-      tags: ["Scientific computing", "Model evaluation", "Environmental data"],
-      featured: true,
-      links: [{ label: "Add details", url: "#" }]
-    },
-    {
-      title: "Robotics Testbed for Learning-Based Control",
-      category: "Robotics",
-      status: "Prototype",
-      text: "An experimental robotics platform for integrating embedded systems, control, sensing, and learning-based autonomy.",
-      focus: "Embodied intelligence",
-      mode: "Experimental system",
-      method: "Robot integration, controller development, hardware experiments, and iterative validation",
-      output: "Prototype platform, videos, and technical reports",
-      tags: ["Robotics", "Embedded systems", "Autonomy"],
-      featured: true,
-      links: [{ label: "Video demo", url: "#" }]
-    },
-    {
-      title: "Hybrid Control with Neural Components",
-      category: "Control",
-      status: "Concept Development",
-      statusTone: "draft",
-      text: "A control-oriented project exploring how dynamic models and neural approximators can work together for adaptive and robust behavior.",
-      focus: "Learning-based control",
-      mode: "Theory + experiment planning",
-      method: "Model-based structure combined with learned residual or policy modules",
-      output: "Concept note, benchmarks, and prototype controller",
-      tags: ["Control", "Adaptive systems", "Optimization"],
-      featured: false,
-      links: [{ label: "Add manuscript", url: "#" }]
-    },
-    {
-      title: "Academic Communication and Research Portfolio System",
-      category: "Communication",
-      status: "Deployed Design",
-      text: "A long-term academic website architecture for presenting research, teaching, publications, media, and project documentation in one coherent identity.",
-      focus: "Scholarly communication",
-      mode: "Digital academic infrastructure",
-      method: "Static site architecture with curated research-first information design",
-      output: "Live site, editable codebase, and update-ready content blocks",
-      tags: ["Portfolio", "GitHub Pages", "Outreach"],
-      featured: false,
-      links: [{ label: "Live site", url: "#" }]
-    },
-    {
-      title: "Scientific Data Modeling with Deep Networks",
-      category: "AI/ML",
-      status: "Ongoing",
-      text: "A line of work on learning from structured scientific datasets while preserving good experimental practice and domain relevance.",
-      focus: "Applied machine learning",
-      mode: "Model development",
-      method: "Feature design, deep learning baselines, evaluation, and interpretation",
-      output: "Model comparisons, reproducible scripts, and research write-up",
-      tags: ["Machine learning", "Deep learning", "Scientific data"],
-      featured: false,
-      links: [{ label: "Code repo", url: "#" }]
-    }
+    { title: "Physics-informed neural operator environment", category: "scientific-ml", meta: "Scientific ML · Simulation", description: "A complete environment-generation and learning pipeline for spatially heterogeneous fields, validation diagnostics, and paper-ready visualization.", tags: ["PINO", "PyTorch", "Uncertainty", "Validation"] },
+    { title: "WRF rainfall and lightning event analysis", category: "simulation", meta: "Meteorology · Forecast diagnostics", description: "Nested-domain numerical weather simulation for Bangladesh rainfall events with GPM comparison, WRF diagnostics, and lightning proxy interpretation.", tags: ["WRF", "GPM IMERG", "Basemap", "Lightning"] },
+    { title: "Yahboom smart robot control stack", category: "robotics", meta: "Robotics · Embedded control", description: "A low-level to high-level control workflow linking MSPM0, motor drivers, UART communication, RDK X5, sensors, and ROS2 integration.", tags: ["MSPM0", "RDK X5", "UART", "ROS2"] },
+    { title: "Single motor PID control demonstration", category: "control", meta: "Control · Education", description: "A compact experimental system for teaching speed control, encoder feedback, PWM actuation, and PID tuning with an ESP32-S3 and L298N motor driver.", tags: ["PID", "ESP32-S3", "L298N", "Encoder"] },
+    { title: "Rainfall ROM and forecasting workflow", category: "scientific-ml", meta: "Reduced-order modeling", description: "A POD and latent-correction pipeline for rainfall field reconstruction, block-basis analysis, and forecast-oriented model comparison.", tags: ["POD", "ROM", "Forecasting", "Rainfall"] },
+    { title: "Research communication and teaching materials", category: "communication", meta: "Education · Public scholarship", description: "YouTube and teaching resources that translate mathematical modeling, code, robotics, and scientific computing into accessible technical explanations.", tags: ["Teaching", "YouTube", "Technical notes", "Mentoring"] }
   ],
-  publications: [
-    {
-      title: "Replace this with your journal article title",
-      authors: "Md Awlad Hossain, Coauthor Name, Coauthor Name",
-      venue: "Journal Name • Volume, Issue, Pages",
-      year: "2026",
-      status: "Published / Under Review",
-      note: "State the core contribution clearly: problem, method, and why the result matters.",
-      links: [
-        { label: "PDF", url: "#" },
-        { label: "DOI", url: "#" },
-        { label: "Code", url: "#" }
-      ]
-    },
-    {
-      title: "Replace this with a conference or workshop paper",
-      authors: "Md Awlad Hossain, Coauthor Name",
-      venue: "Conference / Workshop / Symposium",
-      year: "2025",
-      status: "Preprint / In Progress",
-      statusTone: "draft",
-      note: "Use one sentence to explain the methodological novelty or system contribution.",
-      links: [
-        { label: "Abstract", url: "#" },
-        { label: "Slides", url: "#" }
-      ]
-    },
-    {
-      title: "Replace this with a thesis, chapter, or manuscript",
-      authors: "Md Awlad Hossain",
-      venue: "Thesis / Technical Report / Book Chapter",
-      year: "2024",
-      status: "Draft",
-      statusTone: "draft",
-      note: "Keep this space for thesis work, technical reports, survey manuscripts, or substantial project documentation.",
-      links: [
-        { label: "Details", url: "#" }
-      ]
-    }
-  ],
-  courses: [
-    {
-      kicker: "Course theme",
-      title: "Numerical Methods and Simulation",
-      text: "Courses and mentoring around modeling, discretization, computation, and interpretation of numerical results in scientific settings."
-    },
-    {
-      kicker: "Course theme",
-      title: "Robotics and Intelligent Systems",
-      text: "Teaching that connects robot platforms, sensing, embedded implementation, system integration, and autonomy-oriented thinking."
-    },
-    {
-      kicker: "Course theme",
-      title: "Artificial Intelligence and Machine Learning",
-      text: "Conceptual and applied teaching in ML workflows, experimentation, evaluation, and technical problem solving."
-    },
-    {
-      kicker: "Course theme",
-      title: "Deep Learning for Engineering",
-      text: "Neural architectures, training practice, experiments, and evidence-based comparison for engineering applications."
-    },
-    {
-      kicker: "Course theme",
-      title: "Scientific Machine Learning",
-      text: "Physics-aware and simulation-aware learning concepts for advanced students interested in modern computational research."
-    },
-    {
-      kicker: "Course theme",
-      title: "Control Systems",
-      text: "Feedback, dynamic systems, stability, and modern learning-augmented control ideas presented in a structured way."
-    }
-  ],
-  videos: [
-    {
-      title: "Replace with your YouTube channel or featured video",
-      type: "Featured video",
-      text: "Use this block for a flagship research demo, system walkthrough, or project explanation that represents your work well.",
-      url: "#",
-      linkLabel: "Watch video"
-    },
-    {
-      title: "Technical explainer or coding walkthrough",
-      type: "Educational media",
-      text: "A place for videos that explain experiments, robotics integration, simulation workflows, or modeling pipelines for students.",
-      url: "#",
-      linkLabel: "Open feature"
-    },
-    {
-      title: "Research log or lab update",
-      type: "Research communication",
-      text: "Use this area for concise updates on progress, negative results, design choices, and next steps in ongoing work.",
-      url: "#",
-      linkLabel: "View update"
-    }
-  ],
-  blogs: [
-    {
-      title: "How I connect simulation with machine learning",
-      date: "Research note • Add date",
-      text: "A short essay explaining how your main research areas support one another within a coherent scholarly agenda.",
-      url: "#",
-      linkLabel: "Read note"
-    },
-    {
-      title: "What students can learn from robotics experiments",
-      date: "Teaching note • Add date",
-      text: "A note translating technical work into accessible lessons for students, project groups, or future supervisees.",
-      url: "#",
-      linkLabel: "Read note"
-    },
-    {
-      title: "A structure for writing research project pages",
-      date: "Method note • Add date",
-      text: "Use this for project write-ups covering objective, method, implementation, result, and future work in a scholarly style.",
-      url: "#",
-      linkLabel: "Read note"
-    }
-  ],
-  contactLinks: [
-    { label: "Email", value: "your-email@example.com", url: "mailto:your-email@example.com" },
-    { label: "Google Scholar", value: "Add profile link", url: "#" },
-    { label: "ORCID", value: "Add ORCID", url: "#" },
-    { label: "GitHub", value: "Add GitHub", url: "#" },
-    { label: "LinkedIn", value: "Add LinkedIn", url: "#" },
-    { label: "YouTube", value: "Add channel link", url: "#" }
-  ]
+  teaching: {
+    statement: "Teaching is focused on mathematical clarity, computational practice, and research-led examples.",
+    areas: [
+      { title: "Calculus and differential equations", description: "Conceptual explanation, analytical methods, modeling interpretation, and computational visualization." },
+      { title: "Linear algebra and numerical methods", description: "Matrix methods, eigenvalue problems, numerical approximation, stability, and reproducible computation." },
+      { title: "Probability, statistics, and data analysis", description: "Statistical reasoning, uncertainty, model evaluation, and data-driven scientific interpretation." },
+      { title: "Machine learning for science and engineering", description: "Supervised learning, neural networks, physics-informed learning, scientific data, and critical evaluation." },
+      { title: "Robotics, control, and embedded systems", description: "Feedback, PID control, sensing, motor drivers, embedded implementation, and experimental validation." }
+    ],
+    mentoring: [
+      "Start from strong fundamentals before moving to advanced computational methods.",
+      "Use research projects to teach modeling, implementation, analysis, and communication together.",
+      "Encourage reproducible code, clear figures, and careful comparison rather than only final numerical results.",
+      "Guide students toward independent problem-solving and publication-quality academic habits."
+    ]
+  },
+  youtube: {
+    intro: "Technical videos and demonstrations related to mathematics, simulation, robotics, programming, and research communication.",
+    focus: [
+      "Technical demonstrations of robotics, control, simulation, and AI workflows.",
+      "Student-oriented explanations of mathematics, scientific computing, and programming.",
+      "Research notes that document implementation choices and reproducible experiments.",
+      "Short project walkthroughs connected to publications, teaching, and collaboration."
+    ],
+    videos: [
+      { title: "Robotics control demonstration", status: "Featured slot", description: "Use this card for an embedded demo or YouTube link showing a robot, motor control, or sensor integration workflow.", tags: ["Robotics", "Control", "Demo"] },
+      { title: "Scientific machine learning explanation", status: "Featured slot", description: "Use this card for a tutorial explaining PINNs, neural operators, reduced-order models, or model validation.", tags: ["SciML", "PINN", "Teaching"] },
+      { title: "Weather simulation and visualization", status: "Featured slot", description: "Use this card for WRF/GPM plots, rainfall diagnostics, lightning proxy analysis, or meteorological interpretation.", tags: ["WRF", "Rainfall", "Visualization"] }
+    ]
+  },
+  contact: {
+    intro: "For academic communication, collaboration, teaching, or project discussion, use the contact details and profile links below.",
+    items: [
+      { label: "Email", value: "mdawlad.du@gmail.com", href: "mailto:mdawlad.du@gmail.com" },
+      { label: "Location", value: "Dhaka, Bangladesh" },
+      { label: "Phone", value: "+880 1776041967", href: "tel:+8801776041967" },
+      { label: "GitHub", value: "github.com/aawladd", href: "https://github.com/aawladd" },
+      { label: "YouTube", value: "Functional Value", href: "https://www.youtube.com/@FunctionalValue" },
+      { label: "Google Scholar", value: "Add your Scholar profile", href: "#" },
+      { label: "ORCID", value: "Add your ORCID", href: "#" },
+      { label: "LinkedIn", value: "Add your LinkedIn", href: "#" }
+    ],
+    notes: [
+      { title: "Research collaboration", text: "Open to collaboration in simulation, robotics, scientific machine learning, AI, and control-related work." },
+      { title: "Student engagement", text: "Teaching and mentoring can be connected to project supervision, thesis work, and technical skill development." },
+      { title: "Professional presence", text: "Keeping profiles and documents together creates a more complete and credible scholarly identity online." }
+    ]
+  }
 };

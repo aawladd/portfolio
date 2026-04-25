@@ -1,83 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#08111f" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Contact | Md Awlad Hossain</title>
-  <meta name="description" content="Academic contact and profile links for Md Awlad Hossain." />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic contact information and profile links for Md Awlad Hossain." />
+  <meta name="theme-color" content="#0e4b50" /><title>Contact | Md Awlad Hossain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body data-page="contact">
-  <div class="site-noise"></div>
-  <div class="orb orb-a"></div>
-  <div class="orb orb-b"></div>
-  <div class="grid-overlay"></div>
-  <div id="site-header"></div>
-
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <div class="hero-statement reveal">
-          <span class="eyebrow">Contact</span>
-          <h1>Academic contact, profile links, and collaboration access points</h1>
-          <p class="lead">Use this page to consolidate your professional profiles, contact channels, CV, and materials for collaboration, supervision, or academic review.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-tight">
-      <div class="container contact-grid">
-        <div class="contact-card reveal">
-          <span class="eyebrow">Academic profiles</span>
-          <h2>Professional and scholarly links</h2>
-          <p>Replace the placeholders below with your actual academic and technical profiles.</p>
-          <div id="contact-links" class="contact-list"></div>
-        </div>
-        <div class="contact-card reveal delay-1">
-          <span class="eyebrow">Documents</span>
-          <h2>CV and supporting materials</h2>
-          <p>Place your CV PDF inside <code>assets/files/</code> and update the filename in <code>assets/js/site-data.js</code>.</p>
-          <p>You can also add a teaching statement, research statement, publication list PDF, or project portfolio.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" data-profile="cv-link" href="assets/files/replace-with-your-cv.pdf">Download CV</a>
-            <a class="btn btn-secondary" href="publications.html">View Publications</a>
-          </div>
-          <p class="micro-copy">Email placeholder: <a class="inline-link" data-profile="email-link" href="mailto:your-email@example.com">your-email@example.com</a></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section surface">
-      <div class="container card-grid grid-3">
-        <article class="mini-card reveal">
-          <div class="card-kicker">Collaboration</div>
-          <h3>Research collaboration</h3>
-          <p>Use this page to invite collaboration in simulation, robotics, scientific machine learning, AI, and control-related work.</p>
-        </article>
-        <article class="mini-card reveal delay-1">
-          <div class="card-kicker">Supervision</div>
-          <h3>Student engagement</h3>
-          <p>You can also indicate whether you are open to supervising projects, thesis work, or student research collaborations.</p>
-        </article>
-        <article class="mini-card reveal delay-2">
-          <div class="card-kicker">Professional presence</div>
-          <h3>One trusted academic entry point</h3>
-          <p>Keeping your profiles and documents together creates a more complete and credible scholarly identity online.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <div id="site-footer"></div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="assets/js/site-data.js"></script>
-  <script src="assets/js/layout.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+<body data-page="contact" data-page-title="Contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container topbar"><a class="branding" href="index.html"><span class="brand-mark" data-initials>MAH</span><span><h1 data-name></h1><p data-role></p></span></a><div><button class="nav-toggle" aria-expanded="false">Menu</button><nav class="main-nav" aria-label="Main navigation"><ul class="nav-target"></ul></nav></div></div></header>
+  <main id="main" class="page-wrap"><div class="container page-block">
+    <section class="page-title reveal"><p class="eyebrow">Contact</p><h2>Contact & Profiles</h2><p class="lead" id="contact-intro"></p></section>
+    <section class="compact-grid"><section class="box reveal"><div class="section-head"><h3>Profiles and Contact</h3></div><div id="contact-items"></div></section><section class="box reveal"><div class="section-head"><h3>Documents and Links</h3></div><div class="table-row"><strong>CV</strong><div><a data-cv href="#" target="_blank" rel="noopener">Open curriculum vitae</a></div></div><div class="table-row"><strong>Research</strong><div><a href="research.html">Research and publications</a></div></div><div class="table-row"><strong>Projects</strong><div><a href="projects.html">Project archive</a></div></div><p class="print-note">Place the real CV PDF inside <code>assets/files/</code> and update the filename in <code>assets/js/site-data.js</code>.</p></section></section>
+    <section class="box reveal"><div class="section-head"><h3>Collaboration Notes</h3></div><div class="dense-list" id="contact-notes"></div></section>
+  </div></main>
+  <footer class="footer"><div class="container"><span>© <span id="year"></span> <span data-name></span></span><span>Academic contact and profile links.</span></div></footer>
+  <script src="assets/js/site-data.js"></script><script src="assets/js/helpers.js"></script><script src="assets/js/render.js"></script><script src="assets/js/main.js"></script>
+</body></html>

@@ -1,0 +1,23 @@
+:root {
+  --bg: #f7f3ea;
+  --bg-soft: #fffaf1;
+  --paper: rgba(255, 252, 245, 0.92);
+  --paper-strong: #ffffff;
+  --ink: #172323;
+  --muted: #5d6a68;
+  --soft-muted: #7a8582;
+  --line: rgba(26, 51, 49, 0.14);
+  --accent: #0e4b50;
+  --accent-2: #b88a44;
+  --accent-3: #d7bf88;
+  --danger: #963f37;
+  --shadow: 0 20px 60px rgba(20, 42, 42, 0.11);
+  --shadow-soft: 0 10px 32px rgba(20, 42, 42, 0.08);
+  --radius-xl: 32px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --max: 1180px;
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}

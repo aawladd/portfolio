@@ -1,85 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#08111f" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Projects | Md Awlad Hossain</title>
-  <meta name="description" content="Research systems, computational workflows, and prototypes for Md Awlad Hossain." />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected research systems, computational pipelines, and technical prototypes by Md Awlad Hossain." />
+  <meta name="theme-color" content="#0e4b50" /><title>Projects | Md Awlad Hossain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body data-page="projects">
-  <div class="site-noise"></div>
-  <div class="orb orb-a"></div>
-  <div class="orb orb-b"></div>
-  <div class="grid-overlay"></div>
-  <div id="site-header"></div>
-
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <div class="hero-statement reveal">
-          <span class="eyebrow">Projects</span>
-          <h1>Research systems, computational pipelines, and technical prototypes</h1>
-          <p class="lead">This page presents projects as research artifacts rather than generic portfolio items. Each entry highlights the research focus, method, and expected output or evidence.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-tight">
-      <div class="container">
-        <div class="filter-wrap reveal">
-          <div class="split-head" style="margin-bottom:0;">
-            <div>
-              <span class="eyebrow">Browse projects</span>
-              <h2>Filter by research theme</h2>
-            </div>
-            <p>Use category filters to present related work more clearly during academic review, collaboration discussions, or student exploration.</p>
-          </div>
-          <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="SciML">SciML</button>
-            <button class="filter-btn" data-filter="Simulation">Simulation</button>
-            <button class="filter-btn" data-filter="Robotics">Robotics</button>
-            <button class="filter-btn" data-filter="Control">Control</button>
-            <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
-            <button class="filter-btn" data-filter="Communication">Communication</button>
-          </div>
-        </div>
-        <div id="project-grid" class="card-grid grid-3"></div>
-      </div>
-    </section>
-
-    <section class="section surface">
-      <div class="container card-grid grid-3">
-        <article class="mini-card reveal">
-          <div class="card-kicker">Project writing standard</div>
-          <h3>State the research problem clearly</h3>
-          <p>Each project should identify the problem, context, and why the question matters scientifically or technically.</p>
-        </article>
-        <article class="mini-card reveal delay-1">
-          <div class="card-kicker">Project writing standard</div>
-          <h3>Explain the method and implementation</h3>
-          <p>Summarize the approach, models, experiments, workflows, and engineering choices in a concise scholarly format.</p>
-        </article>
-        <article class="mini-card reveal delay-2">
-          <div class="card-kicker">Project writing standard</div>
-          <h3>Show evidence and output</h3>
-          <p>Connect the work to code, results, manuscripts, figures, demos, or next-step plans so the project feels complete and credible.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <div id="site-footer"></div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="assets/js/site-data.js"></script>
-  <script src="assets/js/layout.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+<body data-page="projects" data-page-title="Projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container topbar"><a class="branding" href="index.html"><span class="brand-mark" data-initials>MAH</span><span><h1 data-name></h1><p data-role></p></span></a><div><button class="nav-toggle" aria-expanded="false">Menu</button><nav class="main-nav" aria-label="Main navigation"><ul class="nav-target"></ul></nav></div></div></header>
+  <main id="main" class="page-wrap"><div class="container page-block">
+    <section class="page-title reveal"><p class="eyebrow">Projects</p><h2>Selected Projects</h2><p class="lead">A concise archive of research, simulation, robotics, and teaching-related technical work.</p></section>
+    <section class="filter-bar reveal" aria-label="Project filters"><div class="filter-set"><button class="active" data-filter="all">All</button><button data-filter="scientific-ml">Scientific ML</button><button data-filter="simulation">Simulation</button><button data-filter="robotics">Robotics</button><button data-filter="control">Control</button><button data-filter="communication">Communication</button></div></section>
+    <section class="box reveal"><div class="section-head"><h3>Selected Projects</h3><small>Filter by theme</small></div><div class="dense-list" id="project-list"></div></section>
+    <section class="three-grid"><article class="metric-card reveal"><strong>01</strong><h4>Research</h4><p>Problem-driven computational work.</p></article><article class="metric-card reveal"><strong>02</strong><h4>Implementation</h4><p>Code, experiments, and systems.</p></article><article class="metric-card reveal"><strong>03</strong><h4>Evidence</h4><p>Figures, validation, and demos.</p></article></section>
+  </div></main>
+  <footer class="footer"><div class="container"><span>© <span id="year"></span> <span data-name></span></span><span>Research projects and technical implementations.</span></div></footer>
+  <script src="assets/js/site-data.js"></script><script src="assets/js/helpers.js"></script><script src="assets/js/render.js"></script><script src="assets/js/main.js"></script>
+</body></html>

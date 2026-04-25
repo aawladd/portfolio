@@ -1,0 +1,17 @@
+.hero-visual {
+  position: absolute;
+  right: clamp(20px, 5vw, 76px);
+  bottom: clamp(20px, 4vw, 54px);
+  width: min(280px, 38vw);
+  opacity: .11;
+  pointer-events: none;
+}
+.hero-visual svg { width: 100%; height: auto; }
+.timeline { position: relative; display: grid; gap: 14px; }
+.timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; left: 12px; width: 2px; background: var(--line); }
+.timeline .item { margin-left: 36px; position: relative; }
+.timeline .item::before {
+  content: ""; position: absolute; left: -32px; top: 20px; width: 12px; height: 12px; border-radius: 999px; background: var(--accent-2); border: 3px solid var(--bg-soft);
+}
+.contact-card .table-row { grid-template-columns: 120px minmax(0, 1fr); }
+.print-note { color: var(--soft-muted); font-size: .92rem; margin-top: 12px; }
