@@ -10,11 +10,12 @@ window.PORTFOLIO_DATA = {
     tagline:
       "Applied mathematics researcher focused on scientific computing, intelligent systems, robotics, and control.",
     profiles: {
-      scholar: "#",
-      orcid: "#",
+      scholar: "https://scholar.google.com/citations?user=klpg31MAAAAJ&hl=en&authuser=4",
+      orcid: "https://orcid.org/0009-0008-6017-0948",
       github: "https://github.com/aawladd",
-      linkedin: "#",
-      youtube: "https://www.youtube.com/@FunctionalValue",
+      linkedin: "https://www.linkedin.com/in/md-awlad/",
+      youtube: "https://www.youtube.com/FunctionalValue",
+      researchgate: "https://www.researchgate.net/profile/Md-Hossain-1286?ev=hdr_xprf",
     },
   },
   nav: [
