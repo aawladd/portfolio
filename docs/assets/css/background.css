@@ -68,6 +68,8 @@ body > *:not(.site-bg) {
   z-index: 1;
 }
 
+.site-header { z-index: 100000; }
+
 @keyframes floatResearch {
   0% { transform: translate3d(0, 0, 0); opacity: 0; }
   12% { opacity: 1; }

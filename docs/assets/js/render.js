@@ -9,7 +9,6 @@ function renderShell() {
   setText("[data-location]", site.profile.location);
   setText("#year", new Date().getFullYear());
 
-  qsa("[data-initials]").forEach(el => { el.textContent = site.profile.initials; });
   qsa("[data-email]").forEach(el => {
     el.textContent = site.profile.email;
     el.setAttribute("href", `mailto:${site.profile.email}`);
@@ -20,8 +19,9 @@ function renderShell() {
   qsa("[data-github]").forEach(el => { el.setAttribute("href", site.profile.profiles.github || "#"); });
   qsa("[data-linkedin]").forEach(el => { el.setAttribute("href", site.profile.profiles.linkedin || "#"); });
   qsa("[data-youtube]").forEach(el => { el.setAttribute("href", site.profile.profiles.youtube || "#"); });
-  qsa("[data-avatar]").forEach(el => {
-    el.innerHTML = `<img src="${escapeHTML(site.profile.avatar)}" alt="${escapeHTML(site.profile.name)} profile monogram">`;
+  qsa("[data-profile-photo]").forEach(el => {
+    el.setAttribute("src", site.profile.avatar);
+    el.setAttribute("alt", `${site.profile.name} profile picture`);
   });
 
   const navTarget = qs(".nav-target");

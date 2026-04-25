@@ -52,10 +52,6 @@
 }
 .link-list a:hover, .action-row a:hover, .action-row button:hover, .filter-set button:hover { transform: translateY(-2px); border-color: rgba(14,75,80,.34); background: #fff; }
 .action-row .primary, .link-list .primary { color: #fff; background: var(--accent); border-color: var(--accent); }
-.profile-chip { display: flex; gap: 14px; align-items: center; margin-bottom: 14px; }
-.profile-chip img, .avatar { width: 64px; height: 64px; border-radius: 22px; background: var(--accent); object-fit: cover; }
-.profile-chip strong { display: block; font-size: 1.08rem; }
-.profile-chip span { display: block; color: var(--muted); font-size: .92rem; }
 .stat-list, .simple-list { list-style: none; display: grid; gap: 10px; }
 .stat-list li, .simple-list li { display: flex; gap: 10px; color: var(--muted); }
 .stat-list li::before, .simple-list li::before { content: "•"; color: var(--accent-2); font-weight: 900; }
@@ -100,8 +96,57 @@
 /* Simple professional refinement */
 .hero-visual { display: none; }
 .hero .inline-list { max-width: 720px; }
-.profile-chip img, .avatar { width: 54px; height: 54px; border-radius: 18px; }
 .aside-box p, .item p, .simple-list li, .stat-list li { font-size: .96rem; }
 .link-list, .action-row { margin-top: 20px; }
 .link-list a, .action-row a, .action-row button, .filter-set button { min-height: 38px; padding: 8px 13px; font-size: .88rem; }
 .inline-list li, .tag { font-size: .76rem; }
+
+/* Final home/profile refinement: compact profile image */
+.profile-summary {
+  display: grid;
+  gap: 16px;
+}
+.profile-summary-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.profile-summary .profile-photo-frame {
+  width: 104px;
+  height: 104px;
+  aspect-ratio: auto;
+  flex: 0 0 104px;
+  margin: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 51, 49, 0.15);
+  background: rgba(255, 255, 255, 0.52);
+}
+.profile-summary .profile-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-identity strong {
+  display: block;
+  font-size: 1.14rem;
+  line-height: 1.15;
+}
+.profile-identity span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: .94rem;
+}
+.profile-summary .stat-list {
+  margin-top: 0 !important;
+}
+
+/* Final spacing fix: remove the large blank area in the homepage hero */
+.home-grid {
+  align-items: start;
+}
+.hero {
+  min-height: 0;
+  justify-content: flex-start;
+}

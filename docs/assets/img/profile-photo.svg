@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="720" viewBox="0 0 640 720" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">A professional academic profile placeholder. Replace this file with a real profile photo if desired.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e4b50"/>
+      <stop offset="0.65" stop-color="#1f6266"/>
+      <stop offset="1" stop-color="#b88a44"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset="1" stop-color="#efe2c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="720" rx="72" fill="#f7f3ea"/>
+  <rect x="34" y="34" width="572" height="652" rx="56" fill="url(#bg)"/>
+  <g opacity="0.18" fill="none" stroke="#fff8e8" stroke-width="2">
+    <path d="M88 168c92-76 190-76 294 0s160 76 170 0"/>
+    <path d="M84 230h472M84 286h472M84 342h472"/>
+    <path d="M126 112v476M214 92v516M302 78v552M390 92v516M478 112v476"/>
+  </g>
+  <circle cx="320" cy="265" r="118" fill="url(#paper)"/>
+  <path d="M154 590c22-120 91-184 166-184s144 64 166 184" fill="url(#paper)"/>
+  <path d="M156 590h328" stroke="#f7f3ea" stroke-width="18" stroke-linecap="round" opacity="0.9"/>
+  <path d="M228 574 298 388h44l70 186h-48l-13-39h-63l-13 39h-47Zm75-82h34l-17-53-17 53Z" fill="#0e4b50" opacity="0.94"/>
+  <circle cx="472" cy="142" r="20" fill="#d7bf88" opacity="0.92"/>
+  <path d="M104 642h142" stroke="#d7bf88" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+</svg>

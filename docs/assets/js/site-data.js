@@ -1,13 +1,12 @@
 window.PORTFOLIO_DATA = {
   profile: {
     name: "Md Awlad Hossain",
-    initials: "MAH",
     role: "Applied Mathematics | Research & Teaching",
     location: "Dhaka, Bangladesh",
     email: "mdawlad.du@gmail.com",
     phone: "+880 1776041967",
     cv: "assets/files/Md_Awlad_Hossain_CV.pdf",
-    avatar: "assets/img/profile.svg",
+    avatar: "assets/img/profile-photo.svg",
     tagline: "Applied mathematics researcher focused on scientific computing, intelligent systems, robotics, and control.",
     profiles: {
       scholar: "#",
