@@ -1,0 +1,105 @@
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.site-bg::before,
+.site-bg::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  border-radius: 999px;
+  filter: blur(10px);
+  opacity: .34;
+}
+
+.site-bg::before {
+  width: 28rem;
+  height: 28rem;
+  top: 8%;
+  right: -8rem;
+  background: radial-gradient(circle, rgba(14, 75, 80, 0.08), transparent 68%);
+  animation: bgDriftOne 22s ease-in-out infinite alternate;
+}
+
+.site-bg::after {
+  width: 24rem;
+  height: 24rem;
+  left: -6rem;
+  bottom: 8%;
+  background: radial-gradient(circle, rgba(184, 138, 68, 0.10), transparent 68%);
+  animation: bgDriftTwo 28s ease-in-out infinite alternate;
+}
+
+.bg-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: .72;
+}
+
+.bg-symbols {
+  position: absolute;
+  inset: 0;
+}
+
+.bg-symbol {
+  position: absolute;
+  color: rgba(14, 75, 80, 0.14);
+  font-family: var(--font-body);
+  font-size: clamp(.78rem, 1.3vw, .95rem);
+  font-weight: 650;
+  letter-spacing: .04em;
+  user-select: none;
+  white-space: nowrap;
+  text-shadow: 0 0 1px rgba(255,255,255,.15);
+  animation-name: floatResearch;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+body > *:not(.site-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes floatResearch {
+  0% { transform: translate3d(0, 0, 0); opacity: 0; }
+  12% { opacity: 1; }
+  50% { transform: translate3d(10px, -14px, 0); opacity: 1; }
+  100% { transform: translate3d(-4px, -28px, 0); opacity: 0; }
+}
+
+@keyframes bgDriftOne {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(-24px, 16px, 0) scale(1.06); }
+}
+
+@keyframes bgDriftTwo {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(18px, -12px, 0) scale(1.08); }
+}
+
+@media (max-width: 640px) {
+  .bg-symbol { font-size: .74rem; }
+  .site-bg::before,
+  .site-bg::after { opacity: .24; }
+  .bg-canvas { opacity: .62; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-bg::before,
+  .site-bg::after,
+  .bg-symbol {
+    animation: none !important;
+  }
+
+  .bg-canvas {
+    opacity: .32;
+  }
+}
