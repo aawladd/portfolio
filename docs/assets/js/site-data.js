@@ -8,15 +8,17 @@ window.PORTFOLIO_DATA = {
     cv: "assets/files/Md_Awlad_Hossain_CV.pdf",
     avatar: "assets/img/Awlad.jpg",
     tagline:
-      "Applied mathematics researcher focused on scientific computing, intelligent systems, robotics, and control.",
+      "Applied mathematics researcher focused on scientific computing, intelligent systems, robotics and control.",
     profiles: {
-      scholar: "https://scholar.google.com/citations?user=klpg31MAAAAJ&hl=en&authuser=4",
+      scholar:
+        "https://scholar.google.com/citations?user=klpg31MAAAAJ&hl=en&authuser=4",
       orcid: "https://orcid.org/0009-0008-6017-0948",
       github: "https://github.com/aawladd",
       linkedin: "https://www.linkedin.com/in/md-awlad/",
       youtube: "https://www.youtube.com/FunctionalValue",
-      researchgate: "https://www.researchgate.net/profile/Md-Hossain-1286?ev=hdr_xprf",
-      facebook: "https://www.facebook.com/aawladd"
+      researchgate:
+        "https://www.researchgate.net/profile/Md-Hossain-1286?ev=hdr_xprf",
+      facebook: "https://www.facebook.com/aawladd",
     },
   },
   nav: [
@@ -275,7 +277,7 @@ window.PORTFOLIO_DATA = {
   },
   contact: {
     intro:
-      "For academic communication, collaboration, teaching, or project discussion, use the contact details and profile links below.",
+      "For academic communication, collaboration, teaching or project discussion use the contact details and profile links below.",
     items: [
       {
         label: "Email",
@@ -294,9 +296,21 @@ window.PORTFOLIO_DATA = {
         value: "Functional Value",
         href: "https://www.youtube.com/@FunctionalValue",
       },
-      { label: "Google Scholar", value: "Add your Scholar profile", href: "#" },
-      { label: "ORCID", value: "Add your ORCID", href: "#" },
-      { label: "LinkedIn", value: "Add your LinkedIn", href: "#" },
+      {
+        label: "Google Scholar",
+        value: "View Profile",
+        href: "https://scholar.google.com/citations?user=klpg31MAAAAJ&hl=en&authuser=4",
+      },
+      {
+        label: "ORCID",
+        value: "0009-0008-6017-0948",
+        href: "https://orcid.org/0009-0008-6017-0948",
+      },
+      {
+        label: "LinkedIn",
+        value: "md-awlad",
+        href: "https://www.linkedin.com/in/md-awlad/",
+      },
     ],
     notes: [
       {
