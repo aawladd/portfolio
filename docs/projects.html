@@ -1,23 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Selected research systems, computational pipelines, and technical prototypes by Md Awlad Hossain." />
-  <meta name="theme-color" content="#0e4b50" /><title>Projects | Md Awlad Hossain</title>
-  <link rel="icon" type="image/svg+xml" href="assets/img/Icon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body data-page="projects" data-page-title="Projects">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="container topbar"><a class="branding" href="index.html"><div class="brand-text"><h1 data-name></h1><p data-role></p></div></a><div><button class="nav-toggle" aria-expanded="false">Menu</button><nav class="main-nav" aria-label="Main navigation"><ul class="nav-target"></ul></nav></div></div></header>
-  <main id="main" class="page-wrap"><div class="container page-block">
-    <section class="page-title reveal"><p class="eyebrow">Projects</p><h2>Selected Projects</h2><p class="lead">A concise archive of research, simulation, robotics, and teaching-related technical work.</p></section>
-    <section class="filter-bar reveal" aria-label="Project filters"><div class="filter-set"><button class="active" data-filter="all">All</button><button data-filter="scientific-ml">Scientific ML</button><button data-filter="simulation">Simulation</button><button data-filter="robotics">Robotics</button><button data-filter="control">Control</button><button data-filter="communication">Communication</button></div></section>
-    <section class="box reveal"><div class="section-head"><h3>Selected Projects</h3><small>Filter by theme</small></div><div class="dense-list" id="project-list"></div></section>
-    <section class="three-grid"><article class="metric-card reveal"><strong>01</strong><h4>Research</h4><p>Problem-driven computational work.</p></article><article class="metric-card reveal"><strong>02</strong><h4>Implementation</h4><p>Code, experiments, and systems.</p></article><article class="metric-card reveal"><strong>03</strong><h4>Evidence</h4><p>Figures, validation, and demos.</p></article></section>
-  </div></main>
-  <footer class="footer"><div class="container"><span>© <span id="year"></span> <span data-name></span></span><span>Research projects and technical implementations.</span></div></footer>
-  <script src="assets/js/site-data.js"></script><script src="assets/js/helpers.js"></script><script src="assets/js/render.js"></script><script src="assets/js/background-animation.js"></script>
-  <script src="assets/js/main.js"></script>
-</body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Selected research systems, computational pipelines, and technical prototypes by Md Awlad Hossain."
+    />
+    <meta name="theme-color" content="#0e4b50" />
+    <title>Projects | Md Awlad Hossain</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/Icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-page="projects" data-page-title="Projects">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="branding" href="index.html"
+          ><div class="brand-text">
+            <h1 data-name></h1>
+            <p data-role></p></div
+        ></a>
+        <div>
+          <button class="nav-toggle" aria-expanded="false">Menu</button>
+          <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-target"></ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main" class="page-wrap">
+      <div class="container page-block">
+        <section class="page-title reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected Projects</h2>
+          <p class="lead">
+            A concise archive of research, simulation, robotics, and
+            teaching-related technical work.
+          </p>
+        </section>
+        <section class="filter-bar reveal" aria-label="Project filters">
+          <div class="filter-set">
+            <button class="active" data-filter="all">All</button
+            ><button data-filter="scientific-ml">Scientific ML</button
+            ><button data-filter="simulation">Simulation</button
+            ><button data-filter="robotics">Robotics</button
+            ><button data-filter="control">Control</button
+            ><button data-filter="communication">Communication</button>
+          </div>
+        </section>
+        <section class="box reveal">
+          <div class="section-head">
+            <h3>Selected Projects</h3>
+            <small>Filter by theme</small>
+          </div>
+          <div class="dense-list" id="project-list"></div>
+        </section>
+        <section class="three-grid">
+          <article class="metric-card reveal">
+            <strong>01</strong>
+            <h4>Research</h4>
+            <p>Problem-driven computational work.</p>
+          </article>
+          <article class="metric-card reveal">
+            <strong>02</strong>
+            <h4>Implementation</h4>
+            <p>Code, experiments, and systems.</p>
+          </article>
+          <article class="metric-card reveal">
+            <strong>03</strong>
+            <h4>Evidence</h4>
+            <p>Figures, validation, and demos.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <span>© <span id="year"></span> <span data-name></span></span
+        ><span>Research projects and technical implementations.</span>
+      </div>
+    </footer>
+    <script src="assets/js/site-data.js"></script>
+    <script src="assets/js/helpers.js"></script>
+    <script src="assets/js/render.js"></script>
+    <script src="assets/js/background-animation.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

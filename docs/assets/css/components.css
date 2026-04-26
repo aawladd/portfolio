@@ -411,3 +411,81 @@
   min-height: 0;
   justify-content: flex-start;
 }
+
+
+.home-grid {
+  align-items: stretch !important;
+}
+
+.home-grid > .hero {
+  height: 100% !important;
+  min-height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.home-grid > .section-stack {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 18px !important;
+}
+
+.home-grid > .section-stack > .aside-box:first-child {
+  flex: 1 1 auto !important;
+}
+
+.home-grid > .section-stack > .aside-box:last-child {
+  flex: 0 0 auto !important;
+}
+
+/* Make profile links full-width and clean */
+.home-grid .section-stack .aside-box:last-child .link-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  margin-top: 14px !important;
+}
+
+.home-grid .section-stack .aside-box:last-child .link-list a {
+  width: 100% !important;
+  min-height: 40px !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 9px 12px !important;
+}
+
+/* Better spacing inside the profile summary card */
+.home-grid .section-stack .aside-box:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* Mobile: keep everything naturally stacked */
+@media (max-width: 940px) {
+  .home-grid {
+    align-items: start !important;
+  }
+
+  .home-grid > .hero,
+  .home-grid > .section-stack {
+    height: auto !important;
+  }
+
+  .home-grid > .section-stack {
+    display: grid !important;
+    gap: 18px !important;
+  }
+
+  .home-grid .section-stack .aside-box:last-child .link-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-grid .section-stack .aside-box:last-child .link-list {
+    grid-template-columns: 1fr !important;
+  }
+}
