@@ -13,7 +13,9 @@
       "details": "32, 113707",
       "doi": "10.1016/j.rineng.2026.113707",
       "url": "",
-      "note": "Open access"
+      "note": "Open access",
+      "citations": 0,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klpg31MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=klpg31MAAAAJ:qjMakFHDy7sC"
     },
     {
       "id": "rol-kuramoto-sivashinsky",
@@ -26,7 +28,9 @@
       "details": "21(1), e0341161",
       "doi": "10.1371/journal.pone.0341161",
       "url": "",
-      "note": ""
+      "note": "",
+      "citations": 5,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klpg31MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=klpg31MAAAAJ:9yKSN-GCB0IC"
     },
     {
       "id": "pipc-net-jerk-equation",
@@ -39,7 +43,9 @@
       "details": "681, 131117",
       "doi": "10.1016/j.physa.2025.131117",
       "url": "",
-      "note": ""
+      "note": "",
+      "citations": 4,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klpg31MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=klpg31MAAAAJ:u5HHmVD_uO8C"
     },
     {
       "id": "piecewise-nn-lorenz",
@@ -52,7 +58,9 @@
       "details": "Lecture Notes in Networks and Systems, vol. 1588, pp. 277–293. Springer, Singapore",
       "doi": "10.1007/978-981-95-1069-6_20",
       "url": "",
-      "note": ""
+      "note": "",
+      "citations": 0,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klpg31MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=klpg31MAAAAJ:d1gkVwhDpl0C"
     },
     {
       "id": "morphcal-ecg",
@@ -93,5 +101,13 @@
       "url": "",
       "note": ""
     }
-  ]
+  ],
+  "scholar": {
+    "citations": 9,
+    "hIndex": 2,
+    "i10": 0,
+    "url": "https://scholar.google.com/citations?user=klpg31MAAAAJ",
+    "updated": "2026-11-08"
+  },
+  "pending": []
 }

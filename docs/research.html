@@ -76,81 +76,12 @@
 
         <section aria-labelledby="current">
           <h2 id="current">Current Research</h2>
-          <div class="entry">
-            <span class="title">Deep Reinforcement Operator Learning for Dynamic Control</span>
-            <span class="date">Mar 2025 – present</span>
-            <span class="where">Institute for Advanced Research, United International University · PI: Dr. Mahtab Uddin</span>
-            <div class="detail">
-              <ul>
-                <li>
-                  Developed a physics-informed dual-critic PPO controller with a DeepONet surrogate for river-pollution
-                  control. Compared with standard PPO, it reduced integrated pollutant exceedance by 11.65% and violation
-                  duration by 10.85%, with a surrogate relative L<sub>2</sub> error of 2.21%
-                  <a href="publications.html#dual-critic-ppo-river-pollution" data-pub="dual-critic-ppo-river-pollution">[J1]</a>.
-                </li>
-                <li>
-                  Extended the approach to safe control with Fourier neural operators and control barrier functions for
-                  battery thermal-runaway cooling <a href="publications.html#fno-cbf-rl-battery" data-pub="fno-cbf-rl-battery">[U3]</a>.
-                </li>
-                <li>
-                  Contributed to DeepONet-guided reinforcement-learning stabilisation of the chaotic Kuramoto–Sivashinsky
-                  equation <a href="publications.html#rol-kuramoto-sivashinsky" data-pub="rol-kuramoto-sivashinsky">[J2]</a>.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <span class="title">Uncertainty-aware inverse parameter estimation</span>
-            <span class="where">Identifiability-aware, uncertainty-weighted PINNs for advection–diffusion–reaction systems</span>
-            <div class="detail">
-              Recovering physical parameters from sparse, noisy observations while accounting for which parameters the data
-              can actually identify <a href="publications.html#uw-pinn-adr-inverse" data-pub="uw-pinn-adr-inverse">[U2]</a>.
-            </div>
-          </div>
+          <div id="projects-current"><noscript>See the <a href="assets/files/Md_Awlad_Hossain_CV.pdf">CV</a> for research projects.</noscript></div>
         </section>
 
         <section aria-labelledby="projects">
-          <h2 id="projects">Other Research Projects</h2>
-          <div class="entry">
-            <span class="title">Vision-based robotic teleoperation</span><span class="date">ongoing</span>
-            <div class="detail">
-              Designed and assembled a 6-DOF aluminium manipulator (high-torque servos, ESP32 controller, PCA9685 PWM
-              driver over I<sup>2</sup>C). I am now developing stereo-camera hand tracking on an RDK X5 edge-AI computer
-              for learning-based teleoperation.
-            </div>
-          </div>
-          <div class="entry">
-            <span class="title">Embedded biomedical AI</span>
-            <div class="detail">
-              Evaluated a calibrated multiview ECG abnormality-screening model on embedded hardware for low-cost,
-              on-device screening <a href="publications.html#morphcal-ecg" data-pub="morphcal-ecg">[U1]</a>.
-            </div>
-          </div>
-          <div class="entry">
-            <span class="title">Hybrid weather prediction</span>
-            <div class="detail">
-              Contributed to a WRF–deep learning lightning-prediction model for hotspots in Bangladesh, funded by the
-              Ministry of Science and Technology, Government of Bangladesh.
-            </div>
-          </div>
-          <div class="entry">
-            <span class="title">Atmospheric simulation</span>
-            <div class="detail">Simulated tropical cyclones with WRF and analysed their dynamical parameters.</div>
-          </div>
-          <div class="entry">
-            <span class="title">Numerical and reduced-order modelling</span>
-            <div class="detail">
-              Wrote a shallow-water-equation solver in Fortran; reconstructed flow fields with proper orthogonal
-              decomposition (POD) and dynamic mode decomposition (DMD).
-            </div>
-          </div>
-          <div class="entry">
-            <span class="title">Multiphysics simulation</span>
-            <div class="detail">
-              COMSOL studies of flow past multiple cylinders, heat transfer, structural response and Darcy porous-media
-              transport; SolidWorks motion study of a slider-crank mechanism.
-            </div>
-          </div>
+          <h2 id="projects">Past Projects</h2>
+          <div id="projects-past"></div>
         </section>
 
         <section aria-labelledby="methods">
@@ -192,5 +123,6 @@
       </div>
     </footer>
     <script src="assets/js/publications.js"></script>
+    <script src="assets/js/projects.js"></script>
   </body>
 </html>
