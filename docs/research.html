@@ -1,24 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Research agenda, themes, methods, and publications of Md Awlad Hossain." />
-  <meta name="theme-color" content="#0e4b50" /><title>Research | Md Awlad Hossain</title>
-  <link rel="icon" type="image/svg+xml" href="assets/img/Icon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body data-page="research" data-page-title="Research">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="container topbar"><a class="branding" href="index.html"><div class="brand-text"><h1 data-name></h1><p data-role></p></div></a><div><button class="nav-toggle" aria-expanded="false">Menu</button><nav class="main-nav" aria-label="Main navigation"><ul class="nav-target"></ul></nav></div></div></header>
-  <main id="main" class="page-wrap"><div class="container page-block">
-    <section class="page-title reveal"><p class="eyebrow">Research</p><h2>Research Focus</h2><p class="lead" id="research-statement"></p></section>
-    <section class="compact-grid"><section class="box reveal"><div class="section-head"><h3>Research Statement</h3></div><div class="dense-list" id="research-long"></div></section><section class="box reveal"><div class="section-head"><h3>Methods</h3></div><ul class="simple-list" id="research-methods"></ul></section></section>
-    <section class="box reveal"><div class="section-head"><h3>Major Research Areas</h3></div><div class="dense-list" id="research-themes"></div></section>
-    <section class="compact-grid"><section class="box reveal"><div class="section-head"><h3>Current Research Questions</h3></div><div class="dense-list" id="research-questions"></div></section><section class="box reveal"><div class="section-head"><h3>Research Workflow</h3></div><ul class="simple-list" id="research-workflow"></ul><div class="link-list"><a data-scholar href="#" target="_blank" rel="noopener">Google Scholar</a><a data-orcid href="#" target="_blank" rel="noopener">ORCID</a><a data-cv href="#" target="_blank" rel="noopener">CV</a></div></section></section>
-    <section class="box reveal"><div class="section-head"><h3>Publications and Manuscripts</h3></div><div class="dense-list" id="research-publications"></div></section>
-  </div></main>
-  <footer class="footer"><div class="container"><span>© <span id="year"></span> <span data-name></span></span><span>Research directions and publications.</span></div></footer>
-  <script src="assets/js/site-data.js"></script><script src="assets/js/helpers.js"></script><script src="assets/js/render.js"></script><script src="assets/js/background-animation.js"></script>
-  <script src="assets/js/main.js"></script>
-</body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research | Md. Awlad Hossain</title>
+    <meta
+      name="description"
+      content="Research interests and projects of Md. Awlad Hossain: scientific machine learning, neural operators, learning-based PDE control, inverse problems and embedded systems."
+    />
+    <meta name="author" content="Md. Awlad Hossain" />
+    <meta name="theme-color" content="#0e4b50" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/Icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-name" href="index.html">Md. Awlad Hossain</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="research.html" aria-current="page">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="assets/files/Md_Awlad_Hossain_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <header class="page-head">
+          <h1>Research</h1>
+          <p class="lead">
+            Physics-informed and operator-learning methods for the modelling, control and inverse analysis of nonlinear
+            systems governed by partial differential equations.
+          </p>
+        </header>
+
+        <section aria-labelledby="interests">
+          <h2 id="interests">Research Interests</h2>
+          <dl class="def-list">
+            <div>
+              <dt>Scientific machine learning</dt>
+              <dd>Physics-informed neural networks (PINNs), DeepONet and Fourier neural operators, hybrid numerical–learning methods.</dd>
+            </div>
+            <div>
+              <dt>Learning-based control</dt>
+              <dd>PDE-constrained control, deep reinforcement learning, control barrier functions for safe control.</dd>
+            </div>
+            <div>
+              <dt>Inverse problems</dt>
+              <dd>Parameter estimation, identifiability, uncertainty quantification, inference from sparse data.</dd>
+            </div>
+            <div>
+              <dt>Embedded systems and robotics</dt>
+              <dd>On-device deployment of scientific ML models for control and biomedical screening; vision-based teleoperation.</dd>
+            </div>
+            <div>
+              <dt>Computational modelling</dt>
+              <dd>CFD and heat transfer, atmospheric and environmental simulation.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section aria-labelledby="current">
+          <h2 id="current">Current Research</h2>
+          <div class="entry">
+            <span class="title">Deep Reinforcement Operator Learning for Dynamic Control</span>
+            <span class="date">Mar 2025 – present</span>
+            <span class="where">Institute for Advanced Research, United International University · PI: Dr. Mahtab Uddin</span>
+            <div class="detail">
+              <ul>
+                <li>
+                  Developed a physics-informed dual-critic PPO controller with a DeepONet surrogate for river-pollution
+                  control. Compared with standard PPO, it reduced integrated pollutant exceedance by 11.65% and violation
+                  duration by 10.85%, with a surrogate relative L<sub>2</sub> error of 2.21%
+                  <a href="publications.html#J1">[J1]</a>.
+                </li>
+                <li>
+                  Extended the approach to safe control with Fourier neural operators and control barrier functions for
+                  battery thermal-runaway cooling <a href="publications.html#U3">[U3]</a>.
+                </li>
+                <li>
+                  Contributed to DeepONet-guided reinforcement-learning stabilisation of the chaotic Kuramoto–Sivashinsky
+                  equation <a href="publications.html#J2">[J2]</a>.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry">
+            <span class="title">Uncertainty-aware inverse parameter estimation</span>
+            <span class="where">Identifiability-aware, uncertainty-weighted PINNs for advection–diffusion–reaction systems</span>
+            <div class="detail">
+              Recovering physical parameters from sparse, noisy observations while accounting for which parameters the data
+              can actually identify <a href="publications.html#U2">[U2]</a>.
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="projects">
+          <h2 id="projects">Other Research Projects</h2>
+          <div class="entry">
+            <span class="title">Vision-based robotic teleoperation</span><span class="date">ongoing</span>
+            <div class="detail">
+              Designed and assembled a 6-DOF aluminium manipulator (high-torque servos, ESP32 controller, PCA9685 PWM
+              driver over I<sup>2</sup>C). I am now developing stereo-camera hand tracking on an RDK X5 edge-AI computer
+              for learning-based teleoperation.
+            </div>
+          </div>
+          <div class="entry">
+            <span class="title">Embedded biomedical AI</span>
+            <div class="detail">
+              Evaluated a calibrated multiview ECG abnormality-screening model on embedded hardware for low-cost,
+              on-device screening <a href="publications.html#U1">[U1]</a>.
+            </div>
+          </div>
+          <div class="entry">
+            <span class="title">Hybrid weather prediction</span>
+            <div class="detail">
+              Contributed to a WRF–deep learning lightning-prediction model for hotspots in Bangladesh, funded by the
+              Ministry of Science and Technology, Government of Bangladesh.
+            </div>
+          </div>
+          <div class="entry">
+            <span class="title">Atmospheric simulation</span>
+            <div class="detail">Simulated tropical cyclones with WRF and analysed their dynamical parameters.</div>
+          </div>
+          <div class="entry">
+            <span class="title">Numerical and reduced-order modelling</span>
+            <div class="detail">
+              Wrote a shallow-water-equation solver in Fortran; reconstructed flow fields with proper orthogonal
+              decomposition (POD) and dynamic mode decomposition (DMD).
+            </div>
+          </div>
+          <div class="entry">
+            <span class="title">Multiphysics simulation</span>
+            <div class="detail">
+              COMSOL studies of flow past multiple cylinders, heat transfer, structural response and Darcy porous-media
+              transport; SolidWorks motion study of a slider-crank mechanism.
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="methods">
+          <h2 id="methods">Methods and Tools</h2>
+          <dl class="def-list">
+            <div>
+              <dt>Programming</dt>
+              <dd>Python, MATLAB, R, Fortran, C/C++, Mathematica; NumPy, Pandas, NetCDF4, WRF-Python, Manim</dd>
+            </div>
+            <div>
+              <dt>Scientific ML</dt>
+              <dd>PyTorch, TensorFlow, Keras, scikit-learn; PINNs, DeepONet, FNO, PPO and actor–critic RL; U-Net and ResNet</dd>
+            </div>
+            <div>
+              <dt>Numerical methods</dt>
+              <dd>PDE discretisation, inverse problems, parameter estimation, POD/DMD reduced-order modelling</dd>
+            </div>
+            <div>
+              <dt>Simulation software</dt>
+              <dd>COMSOL Multiphysics, WRF, MPAS, CROCO, SolidWorks</dd>
+            </div>
+            <div>
+              <dt>Embedded and robotics</dt>
+              <dd>ESP32 / ESP32-S3 (C/C++, Arduino), I<sup>2</sup>C peripherals, PWM servo control (PCA9685), RDK X5, stereo vision</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>LaTeX, Git/GitHub, Linux</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© 2026 Md. Awlad Hossain</span>
+        <span>Last updated November 2026</span>
+      </div>
+    </footer>
+  </body>
+</html>
