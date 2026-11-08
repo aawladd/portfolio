@@ -214,3 +214,8 @@ a.badge:hover { background: var(--accent-soft); text-decoration: none; }
 /* Justified body text (About) */
 .justify p:not(.small) { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 .justify { max-width: none; }
+
+/* Footer links */
+.footer-links { display: inline-flex; flex-wrap: wrap; gap: 4px 16px; }
+.site-footer a { color: var(--faint); }
+.site-footer a:hover { color: var(--accent); }
