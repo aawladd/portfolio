@@ -2,12 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Redirecting… | Md. Awlad Hossain</title>
-    <meta name="robots" content="noindex" />
-    <link rel="canonical" href="teaching.html#outreach" />
-    <meta http-equiv="refresh" content="0; url=teaching.html#outreach" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos | Md. Awlad Hossain</title>
+    <meta
+      name="description"
+      content="Videos from Functional Value, the YouTube channel of Md. Awlad Hossain: mathematics, simulation (COMSOL, Manim, SolidWorks) and embedded systems."
+    />
+    <meta name="author" content="Md. Awlad Hossain" />
+    <meta name="theme-color" content="#0e4b50" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/Icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <p>This page has moved to <a href="teaching.html#outreach">teaching.html#outreach</a>.</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-name" href="index.html">Md. Awlad Hossain</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="youtube.html" aria-current="page">Videos</a></li>
+            <li><a href="assets/files/Md_Awlad_Hossain_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <header class="page-head">
+          <h1>Videos</h1>
+          <p class="lead">
+            I run the YouTube channel
+            <a href="https://www.youtube.com/@FunctionalValue" target="_blank" rel="noopener"><em>Functional Value</em></a>.
+            It has tutorials and demonstrations on mathematics, scientific simulation (COMSOL, Manim, SolidWorks),
+            Python and embedded systems.
+          </p>
+        </header>
+
+        <section aria-labelledby="channel">
+          <h2 id="channel">From the Channel</h2>
+          <div class="sort-bar" data-sort-for="video-grid" role="group" aria-label="Sort videos">
+            <button type="button" data-sort="featured" aria-pressed="true">Popular &amp; recent</button>
+            <button type="button" data-sort="views" aria-pressed="false">Most viewed</button>
+            <button type="button" data-sort="latest" aria-pressed="false">Latest</button>
+          </div>
+          <div class="video-grid" id="video-grid" data-videos data-limit="12">
+            <noscript>Please visit the <a href="https://www.youtube.com/@FunctionalValue">channel on YouTube</a>.</noscript>
+          </div>
+          <p class="small muted" style="margin-top: 18px">
+            View counts updated <span data-videos-updated>daily</span> ·
+            <a href="https://www.youtube.com/@FunctionalValue" target="_blank" rel="noopener">Open the channel on YouTube →</a>
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© 2026 Md. Awlad Hossain</span>
+        <span>Last updated November 2026</span>
+      </div>
+    </footer>
+    <script src="assets/js/youtube.js"></script>
   </body>
 </html>

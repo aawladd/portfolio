@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Site Admin | Md. Awlad Hossain</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/Icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      body { font-family: var(--sans); font-size: 0.95rem; }
+      .admin-wrap { width: min(900px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 64px; }
+      .admin-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+      .admin-head h1 { font-size: 1.6rem; }
+      .panel { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 22px; }
+      .panel + .panel { margin-top: 20px; }
+      .panel h2 { font-size: 1.15rem; color: var(--accent); margin-bottom: 12px; }
+      .lock { max-width: 460px; margin: 40px auto; }
+      label { display: block; font-weight: 600; font-size: 0.85rem; margin: 14px 0 4px; }
+      label .hint { font-weight: 400; color: var(--faint); }
+      input[type="text"], input[type="password"], input[type="url"], select, textarea {
+        width: 100%; padding: 8px 10px; border: 1px solid #cfcabd; border-radius: 4px;
+        font: inherit; background: #fff; color: var(--ink);
+      }
+      textarea { resize: vertical; min-height: 64px; }
+      input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+      .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+      .row-3 { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0 16px; }
+      .check { display: flex; align-items: center; gap: 8px; font-weight: 500; margin-top: 14px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; align-items: center; }
+      .b { font: inherit; font-size: 0.88rem; font-weight: 600; cursor: pointer; padding: 7px 14px; border-radius: 4px; border: 1px solid var(--rule); background: #fff; color: var(--ink); }
+      .b:hover { border-color: var(--accent); color: var(--accent); }
+      .b.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+      .b.primary:hover { background: #0a393d; color: #fff; }
+      .b.danger { color: #9b2c2c; }
+      .b.danger:hover { border-color: #9b2c2c; }
+      .b:disabled { opacity: 0.5; cursor: not-allowed; }
+      .b.sm { padding: 3px 9px; font-size: 0.8rem; font-weight: 500; }
+      .msg { margin-top: 14px; padding: 10px 12px; border-radius: 4px; font-size: 0.88rem; display: none; }
+      .msg.show { display: block; }
+      .msg.ok { background: #e6f2ea; color: #1d5a32; }
+      .msg.err { background: #fbeaea; color: #8a2424; }
+      .msg.info { background: var(--accent-soft); color: var(--accent); }
+      .pub-row { display: grid; grid-template-columns: 3em minmax(0, 1fr) auto; gap: 10px; padding: 12px 0; border-top: 1px solid var(--rule); align-items: start; }
+      .pub-row:first-of-type { border-top: 0; }
+      .pub-row .k { font-weight: 600; color: var(--accent); padding-top: 2px; }
+      .pub-row .t { font-family: var(--serif); font-size: 1rem; line-height: 1.4; }
+      .pub-row .v { color: var(--faint); font-size: 0.82rem; margin-top: 2px; }
+      .pub-row .ctl { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+      .group-title { font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.75rem; margin: 22px 0 4px; }
+      .group-title:first-child { margin-top: 0; }
+      .preview { margin-top: 18px; padding: 14px; background: var(--bg); border: 1px dashed #cfcabd; border-radius: 6px; font-family: var(--serif); font-size: 1rem; line-height: 1.6; }
+      .preview-label { font-family: var(--sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--faint); margin-bottom: 4px; }
+      .dirty-bar { position: sticky; bottom: 0; margin-top: 20px; background: #fff8e6; border: 1px solid #e8d49c; border-radius: 6px; padding: 12px 16px; display: none; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+      .dirty-bar.show { display: flex; }
+      .note { color: var(--muted); font-size: 0.85rem; line-height: 1.55; }
+      .note code { background: var(--bg); padding: 1px 4px; border-radius: 3px; }
+      [hidden] { display: none !important; }
+      @media (max-width: 640px) {
+        .row, .row-3 { grid-template-columns: 1fr; }
+        .pub-row { grid-template-columns: 2.5em minmax(0, 1fr); }
+        .pub-row .ctl { grid-column: 1 / -1; justify-content: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admin-wrap">
+      <!-- First-time setup on this device -->
+      <div id="view-setup" class="panel lock" hidden>
+        <h2>Set up admin access on this device</h2>
+        <p class="note">
+          Saving publications commits to the GitHub repository, so this page needs a GitHub access token. The token is
+          encrypted with your password and stored only in this browser; it is never sent anywhere except GitHub.
+        </p>
+        <label for="setup-token">GitHub fine-grained token
+          <span class="hint">(<a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">create one</a>)</span></label>
+        <input id="setup-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…" />
+        <p class="note" style="margin-top: 6px">
+          Repository access: only <code>aawladd/portfolio</code>. Permissions: <code>Contents: Read and write</code>
+          (and <code>Actions: Read and write</code> for the “Refresh YouTube” button).
+        </p>
+        <label for="setup-pw">Choose a password <span class="hint">(at least 10 characters)</span></label>
+        <input id="setup-pw" type="password" autocomplete="new-password" />
+        <label for="setup-pw2">Confirm password</label>
+        <input id="setup-pw2" type="password" autocomplete="new-password" />
+        <div class="actions"><button class="b primary" id="setup-btn">Save and unlock</button></div>
+        <div class="msg" id="setup-msg"></div>
+      </div>
+
+      <!-- Unlock -->
+      <form id="view-lock" class="panel lock" hidden>
+        <h2>Site admin</h2>
+        <label for="lock-pw">Password</label>
+        <input id="lock-pw" type="password" autocomplete="current-password" autofocus />
+        <div class="actions">
+          <button class="b primary" type="submit">Unlock</button>
+          <button class="b sm" type="button" id="forget-btn-lock">Use a different token</button>
+        </div>
+        <div class="msg" id="lock-msg"></div>
+      </form>
+
+      <!-- Editor -->
+      <div id="view-editor" hidden>
+        <div class="admin-head">
+          <h1>Publications</h1>
+          <div class="actions" style="margin: 0">
+            <button class="b primary" id="add-btn">+ Add publication</button>
+            <button class="b" id="yt-btn" title="Fetch the latest videos and view counts now">Refresh YouTube</button>
+            <a class="b" href="publications.html" target="_blank" rel="noopener" style="text-decoration: none">View site</a>
+            <button class="b" id="lock-btn">Lock</button>
+          </div>
+        </div>
+        <div class="msg" id="editor-msg"></div>
+
+        <div class="panel" id="form-panel" hidden>
+          <h2 id="form-title">Add publication</h2>
+          <label for="f-doi">DOI <span class="hint">— paste and press “Fetch” to fill the details automatically</span></label>
+          <div style="display: flex; gap: 8px">
+            <input id="f-doi" type="text" spellcheck="false" placeholder="10.1016/j.example.2026.123456" />
+            <button class="b" id="doi-btn" type="button">Fetch</button>
+          </div>
+          <div class="row">
+            <div>
+              <label for="f-type">Type</label>
+              <select id="f-type"></select>
+            </div>
+            <div>
+              <label for="f-year">Year <span class="hint">(leave empty if under review)</span></label>
+              <input id="f-year" type="text" inputmode="numeric" maxlength="4" />
+            </div>
+          </div>
+          <label for="f-authors">Authors <span class="hint">— e.g. Hossain, M. A., Ahmed, N., &amp; Uddin, M. Your name is bolded automatically.</span></label>
+          <textarea id="f-authors" rows="2"></textarea>
+          <label class="check"><input id="f-corr" type="checkbox" /> I am the corresponding author (†)</label>
+          <label for="f-title">Title</label>
+          <textarea id="f-title" rows="2"></textarea>
+          <div class="row">
+            <div>
+              <label for="f-venue">Journal / conference / book</label>
+              <input id="f-venue" type="text" />
+            </div>
+            <div>
+              <label for="f-details">Volume, issue, pages <span class="hint">e.g. 32, 113707</span></label>
+              <input id="f-details" type="text" />
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="f-url">Extra link <span class="hint">(PDF, arXiv… optional)</span></label>
+              <input id="f-url" type="url" placeholder="https://" />
+            </div>
+            <div>
+              <label for="f-note">Badge <span class="hint">e.g. Open access, Best paper</span></label>
+              <input id="f-note" type="text" />
+            </div>
+          </div>
+          <label for="f-id">Anchor ID <span class="hint">(used in links like publications.html#id; filled from the title)</span></label>
+          <input id="f-id" type="text" spellcheck="false" />
+          <div class="preview"><div class="preview-label">Preview</div><div id="f-preview"></div></div>
+          <div class="actions">
+            <button class="b primary" id="save-btn" type="button">Save to list</button>
+            <button class="b" id="cancel-btn" type="button">Cancel</button>
+          </div>
+          <div class="msg" id="form-msg"></div>
+        </div>
+
+        <div class="panel" style="margin-top: 20px">
+          <div id="pub-summary-admin" class="note" style="margin-bottom: 14px"></div>
+          <div id="pub-rows"></div>
+        </div>
+
+        <div class="dirty-bar" id="dirty-bar">
+          <span><strong>Unpublished changes.</strong> <span id="dirty-list" class="note"></span></span>
+          <span class="actions" style="margin: 0">
+            <button class="b" id="discard-btn">Discard</button>
+            <button class="b primary" id="publish-btn">Publish to website</button>
+          </span>
+        </div>
+
+        <p class="note" style="margin-top: 28px">
+          Publishing commits <code>docs/assets/data/publications.json</code> to GitHub. The live site updates in about a minute.
+          <button class="b sm" id="forget-btn" style="margin-left: 6px">Forget this device</button>
+        </p>
+      </div>
+    </div>
+
+    <script>window.PUBS_NO_AUTO = true;</script>
+    <script src="assets/js/publications.js"></script>
+    <script src="assets/js/admin.js"></script>
+  </body>
+</html>
