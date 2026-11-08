@@ -3,8 +3,9 @@
 - Google Scholar: citation counts per paper and profile metrics (citations, h-index, i10-index).
 - ORCID: works with DOIs. A new DOI is added using clean metadata from Crossref; a work whose title
   matches an existing "under review"/"preprint" entry promotes that entry (adds DOI, journal, volume).
-- Scholar papers that cannot be matched to a DOI are put in "pending" for approval on the admin page.
-- Anything deleted or ignored on the admin page is listed in "ignore" and never re-added.
+- A Scholar paper not known from ORCID is looked up on Crossref by title; if found it is added with full
+  metadata, otherwise it is added using Scholar's own details. Everything is automatic.
+- Titles or DOIs listed in "ignore" in publications.json are never added (edit the file to hide a paper).
 
 Each source is optional: if Scholar blocks the request, ORCID still runs (and vice versa).
 Standard library only.
@@ -137,6 +138,46 @@ def crossref(doi, me, me_match):
     }
 
 
+def crossref_by_title(title):
+    q = urllib.parse.urlencode({"query.bibliographic": title, "rows": 3, "select": "DOI,title"})
+    items = json.loads(get(f"https://api.crossref.org/works?{q}",
+                           ua="portfolio-publication-sync (https://aawladd.github.io/portfolio/)"))["message"]["items"]
+    for it in items:
+        if same_title((it.get("title") or [""])[0], title):
+            return it["DOI"].lower()
+    return ""
+
+
+def scholar_authors(text, me, me_match):
+    """'MA Hossain, N Ahmed, ...' -> 'Hossain, M. A., Ahmed, N., et al.'"""
+    truncated = "..." in text or "…" in text
+    names = []
+    for raw in re.split(r",\s*", text.replace("…", "").replace("...", "")):
+        parts = raw.split()
+        if not parts:
+            continue
+        if len(parts) > 1 and parts[0].isupper() and parts[0].isalpha() and len(parts[0]) <= 4:
+            initials_, surname = parts[0], " ".join(parts[1:])
+            name = f"{surname}, {' '.join(c + '.' for c in initials_)}"
+        else:
+            name = raw.strip()
+        if me and name == me or (me_match and me_match in raw.lower()):
+            name = me
+        names.append(name)
+    if truncated:
+        return ", ".join(names) + ", et al."
+    return join_authors(names) if names else ""
+
+
+def scholar_type(venue):
+    v = venue.lower()
+    if re.search(r"arxiv|preprint|ssrn|research square|biorxiv|medrxiv", v):
+        return "preprint"
+    if re.search(r"conference|proceedings|proc\.|symposium|workshop|lecture notes", v):
+        return "conference"
+    return "journal"
+
+
 # ---------------------------------------------------------------- merge
 
 def insert_at(pubs, ptype):
@@ -203,7 +244,6 @@ def main():
         print(f"ORCID skipped: {e}", file=sys.stderr)
 
     # Google Scholar: citations, metrics, and anything ORCID does not know about
-    pending = []
     try:
         metrics, papers = scholar()
         if metrics:
@@ -211,14 +251,29 @@ def main():
                                "url": f"https://scholar.google.com/citations?user={SCHOLAR_ID}"}
         for sp in papers:
             p = find(title=sp["title"])
+            if not p and not ignored(sp["title"]):
+                doi = crossref_by_title(sp["title"])
+                if doi and not ignored(sp["title"], doi):
+                    add_or_promote(doi, sp["title"])
+                else:  # no DOI anywhere: use Scholar's details as they are
+                    venue = re.sub(r",\s*\d{4}$", "", sp["venue"]).strip()
+                    taken = {x["id"] for x in pubs}
+                    pid, n = slugify(sp["title"]), 2
+                    while pid in taken:
+                        pid, n = f"{slugify(sp['title'])}-{n}", n + 1
+                    ptype = scholar_type(venue)
+                    pubs.insert(insert_at(pubs, ptype), {
+                        "id": pid, "type": ptype, "authors": scholar_authors(sp["authors"], me, me_match),
+                        "corresponding": False, "year": sp["year"], "title": sp["title"], "venue": venue,
+                        "details": "", "doi": "", "url": sp["url"], "note": ""})
+                    log.append(f"Added from Scholar: {sp['title'][:70]}")
+                p = find(title=sp["title"])
             if p:
                 p["citations"] = sp["citations"]
                 p["scholarUrl"] = sp["url"]
-            elif not ignored(sp["title"]):
-                pending.append(sp)
-        data["pending"] = pending
     except Exception as e:  # noqa: BLE001
         print(f"Scholar skipped: {e}", file=sys.stderr)
+    data.pop("pending", None)
 
     if json.dumps(data, sort_keys=True) == before:
         print("No changes.")
@@ -228,8 +283,6 @@ def main():
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
     print("\n".join(log) or "Updated citations/metrics.")
-    if pending:
-        print(f"{len(pending)} Scholar item(s) waiting for approval on the admin page.")
 
 
 if __name__ == "__main__":
