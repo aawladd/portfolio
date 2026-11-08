@@ -30,6 +30,7 @@
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="youtube.html">Videos</a></li>
             <li><a href="assets/files/Md_Awlad_Hossain_CV.pdf" target="_blank" rel="noopener">CV</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -92,28 +93,20 @@
 
           <section aria-labelledby="recent">
             <h2 id="recent">Recent Publications</h2>
-            <ul class="recent-pubs">
-              <li>
-                <strong>Hossain, M. A.</strong>, Ahmed, N., Uddin, M., Eme, K. A., &amp; Azhari, H. A. (2026).
-                Physics-informed operator learning with dual-critic proximal policy optimization for time-sensitive
-                PDE-constrained control: Application to river pollution management.
-                <span class="venue">Results in Engineering</span>, 32, 113707.
-                <a class="badge" href="https://doi.org/10.1016/j.rineng.2026.113707" target="_blank" rel="noopener">DOI</a>
-              </li>
-              <li>
-                Ahmed, N., Babu, M. A., Hossain, M. S., Fayz-Al-Asad, M., <strong>Hossain, M. A.</strong>, et al. (2026).
-                Reinforcement Operator Learning (ROL): A hybrid DeepONet-guided reinforcement learning framework for
-                stabilizing the Kuramoto–Sivashinsky equation. <span class="venue">PLOS ONE</span>, 21(1), e0341161.
-                <a class="badge" href="https://doi.org/10.1371/journal.pone.0341161" target="_blank" rel="noopener">DOI</a>
-              </li>
-              <li>
-                Ahmed, N., <strong>Hossain, M. A.</strong>, Babu, M. A., Fayz-Al-Asad, M., &amp; Ahmmed, M. M. (2026).
-                A physics-informed piecewise continuity network for solving the non-linear jerk equation: PiPC-Net.
-                <span class="venue">Physica A</span>, 681, 131117.
-                <a class="badge" href="https://doi.org/10.1016/j.physa.2025.131117" target="_blank" rel="noopener">DOI</a>
-              </li>
+            <ul class="recent-pubs" id="recent-pubs">
+              <noscript><li>See the <a href="publications.html">publications page</a>.</li></noscript>
             </ul>
             <p class="small" style="margin-top: 14px"><a href="publications.html">Full list of publications →</a></p>
+          </section>
+
+          <section aria-labelledby="videos">
+            <h2 id="videos">On YouTube</h2>
+            <p class="muted small">
+              Popular and recent videos from my channel
+              <a href="https://www.youtube.com/@FunctionalValue" target="_blank" rel="noopener"><em>Functional Value</em></a>.
+            </p>
+            <div class="video-grid" id="home-videos" data-videos data-limit="3"></div>
+            <p class="small" style="margin-top: 14px"><a href="youtube.html">More videos →</a></p>
           </section>
 
           <section aria-labelledby="appointments">
@@ -169,5 +162,7 @@
         <span>Last updated November 2026</span>
       </div>
     </footer>
+    <script src="assets/js/publications.js"></script>
+    <script src="assets/js/youtube.js"></script>
   </body>
 </html>

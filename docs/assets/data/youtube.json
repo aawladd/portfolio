@@ -1,0 +1,116 @@
+{
+  "channel": {
+    "id": "UCDaRx5OtzKj54M8vMKTFrQw",
+    "title": "Functional Value",
+    "url": "https://www.youtube.com/@FunctionalValue"
+  },
+  "source": "rss",
+  "updated": "2026-11-08T13:15:59Z",
+  "videos": [
+    {
+      "id": "CqIEJYAz71w",
+      "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
+      "published": "2026-03-17T19:31:50+00:00",
+      "views": 1375,
+      "short": true
+    },
+    {
+      "id": "F0VfLNBV1bw",
+      "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
+      "published": "2025-12-27T12:59:32+00:00",
+      "views": 1344,
+      "short": true
+    },
+    {
+      "id": "mmvMDFCyX78",
+      "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
+      "published": "2025-12-26T17:54:18+00:00",
+      "views": 862,
+      "short": false
+    },
+    {
+      "id": "We1L70SoRN8",
+      "title": "On/Off Switch vs Push Button Demo",
+      "published": "2025-12-24T20:11:59+00:00",
+      "views": 86,
+      "short": false
+    },
+    {
+      "id": "KkdVi_HYdl0",
+      "title": "Mass-Spring-Damper Model Simulation Using Manim.",
+      "published": "2024-12-13T15:29:31+00:00",
+      "views": 699,
+      "short": false
+    },
+    {
+      "id": "A3v5vhB5iIQ",
+      "title": "How Vortices Changes Due to Different Height of Cylindrical.",
+      "published": "2024-12-09T14:58:09+00:00",
+      "views": 90,
+      "short": false
+    },
+    {
+      "id": "XX4TB2dxLyY",
+      "title": "Heat Transfer in Fluid Simulation with COMSOL.[Bangla]",
+      "published": "2023-09-29T18:37:54+00:00",
+      "views": 2756,
+      "short": false
+    },
+    {
+      "id": "gGYptlYVnFw",
+      "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
+      "published": "2023-09-29T16:03:09+00:00",
+      "views": 9071,
+      "short": false
+    },
+    {
+      "id": "nnkYKhh8dv0",
+      "title": "Bio Fluid Problem Solve With COMSOL|| Fluid Simulation [Bangla]",
+      "published": "2023-09-29T08:21:36+00:00",
+      "views": 3385,
+      "short": false
+    },
+    {
+      "id": "_be6g45Ux64",
+      "title": "Slider Crack Simulation With Solidworks",
+      "published": "2022-09-24T15:57:11+00:00",
+      "views": 629,
+      "short": true
+    },
+    {
+      "id": "HTD5QU9FKN4",
+      "title": "3 Ways to Matrix Multiplication With Python NumPy",
+      "published": "2022-07-13T02:00:07+00:00",
+      "views": 3207,
+      "short": true
+    },
+    {
+      "id": "I0Y65UoqljU",
+      "title": "Functions Property in 53 Seconds.",
+      "published": "2022-02-25T16:46:39+00:00",
+      "views": 515,
+      "short": true
+    },
+    {
+      "id": "-nAUa3HIg5I",
+      "title": "QR Code Generate With Python || Python Project",
+      "published": "2021-12-03T07:07:34+00:00",
+      "views": 579,
+      "short": true
+    },
+    {
+      "id": "OHWPCHqNsWM",
+      "title": "How to Install Python Spyder5 IDE with just pip In Windows 11!!!!",
+      "published": "2021-11-08T15:28:09+00:00",
+      "views": 167,
+      "short": false
+    },
+    {
+      "id": "fGDQBTpD7VM",
+      "title": "How to  Draw Cone With RevolutionPlot3D in Mathematica",
+      "published": "2021-10-18T07:42:44+00:00",
+      "views": 4003,
+      "short": true
+    }
+  ]
+}

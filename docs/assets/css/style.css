@@ -128,9 +128,9 @@ section h2 + h3 { margin-top: 0; }
 .pub-list li { display: grid; grid-template-columns: 3em minmax(0, 1fr); gap: 8px; scroll-margin-top: 20px; }
 .pub-list li + li { margin-top: 16px; }
 .pub-key { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: var(--accent); padding-top: 3px; }
-.pub-list .me { font-weight: 700; }
+.me { font-weight: 700; }
 .pub-list .ptitle { color: var(--ink); }
-.pub-list .venue { font-style: italic; }
+.venue { font-style: italic; }
 .pub-links { display: inline-flex; flex-wrap: wrap; gap: 6px; margin-left: 4px; }
 .badge {
   display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
@@ -185,3 +185,28 @@ a.badge:hover { background: var(--accent-soft); text-decoration: none; }
   .site-header, .site-footer, .btn { display: none; }
   body { background: #fff; }
 }
+
+/* Videos */
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 24px 20px; }
+.video { display: flex; flex-direction: column; gap: 6px; color: var(--ink); }
+.video:hover { text-decoration: none; }
+.video:hover .vtitle { color: var(--accent); }
+.thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 6px; background: #e9e6df; border: 1px solid var(--rule); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.25s ease; }
+.video:hover .thumb img { transform: scale(1.03); }
+.thumb-tag {
+  position: absolute; right: 6px; bottom: 6px; padding: 1px 6px; border-radius: 3px;
+  background: rgba(0, 0, 0, 0.75); color: #fff; font-family: var(--sans); font-size: 0.7rem; font-weight: 600;
+}
+.vtitle {
+  font-size: 0.98rem; line-height: 1.35; font-weight: 600;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.vmeta { font-family: var(--sans); font-size: 0.8rem; color: var(--faint); }
+.sort-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.sort-bar button, .btn-plain {
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 500; cursor: pointer;
+  padding: 5px 12px; border-radius: 4px; border: 1px solid var(--rule); background: var(--paper); color: var(--muted);
+}
+.sort-bar button:hover, .btn-plain:hover { border-color: var(--accent); color: var(--accent); }
+.sort-bar button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }

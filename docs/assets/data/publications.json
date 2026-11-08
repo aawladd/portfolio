@@ -1,0 +1,97 @@
+{
+  "me": "Hossain, M. A.",
+  "meMatch": "awlad",
+  "publications": [
+    {
+      "id": "dual-critic-ppo-river-pollution",
+      "type": "journal",
+      "authors": "Hossain, M. A., Ahmed, N., Uddin, M., Eme, K. A., & Azhari, H. A.",
+      "corresponding": false,
+      "year": "2026",
+      "title": "Physics-informed operator learning with dual-critic proximal policy optimization for time-sensitive PDE-constrained control: Application to river pollution management",
+      "venue": "Results in Engineering",
+      "details": "32, 113707",
+      "doi": "10.1016/j.rineng.2026.113707",
+      "url": "",
+      "note": "Open access"
+    },
+    {
+      "id": "rol-kuramoto-sivashinsky",
+      "type": "journal",
+      "authors": "Ahmed, N., Babu, M. A., Hossain, M. S., Fayz-Al-Asad, M., Hossain, M. A., Ahmmed, M. M., Rahman, M. M., & Mahmud, M.",
+      "corresponding": false,
+      "year": "2026",
+      "title": "Reinforcement Operator Learning (ROL): A hybrid DeepONet-guided reinforcement learning framework for stabilizing the Kuramoto–Sivashinsky equation",
+      "venue": "PLOS ONE",
+      "details": "21(1), e0341161",
+      "doi": "10.1371/journal.pone.0341161",
+      "url": "",
+      "note": ""
+    },
+    {
+      "id": "pipc-net-jerk-equation",
+      "type": "journal",
+      "authors": "Ahmed, N., Hossain, M. A., Babu, M. A., Fayz-Al-Asad, M., & Ahmmed, M. M.",
+      "corresponding": false,
+      "year": "2026",
+      "title": "A physics-informed piecewise continuity network for solving the non-linear jerk equation: PiPC-Net",
+      "venue": "Physica A: Statistical Mechanics and its Applications",
+      "details": "681, 131117",
+      "doi": "10.1016/j.physa.2025.131117",
+      "url": "",
+      "note": ""
+    },
+    {
+      "id": "piecewise-nn-lorenz",
+      "type": "conference",
+      "authors": "Hossain, M. A., Ahmed, N., Babu, M. A., Ahmmed, M. M., Rahman, M. M., & Mahmud, M.",
+      "corresponding": true,
+      "year": "2026",
+      "title": "Piecewise neural network model to obtain large interval solution to the Lorenz system",
+      "venue": "Proc. 6th Int. Conf. on Trends in Computational and Cognitive Engineering (TCCE 2024)",
+      "details": "Lecture Notes in Networks and Systems, vol. 1588, pp. 277–293. Springer, Singapore",
+      "doi": "10.1007/978-981-95-1069-6_20",
+      "url": "",
+      "note": ""
+    },
+    {
+      "id": "morphcal-ecg",
+      "type": "review",
+      "authors": "Hossain, M. A., Uddin, M., Hossain, M. S., Mostafa, G., & Imran, M. M. H.",
+      "corresponding": false,
+      "year": "",
+      "title": "MorphCal: Calibrated multiview electrocardiogram abnormality screening with embedded system evaluation",
+      "venue": "Computers & Electrical Engineering",
+      "details": "",
+      "doi": "",
+      "url": "",
+      "note": ""
+    },
+    {
+      "id": "uw-pinn-adr-inverse",
+      "type": "review",
+      "authors": "Hossain, M. A., Adnan, M. I., Hossain, M. S., & Uddin, M.",
+      "corresponding": false,
+      "year": "",
+      "title": "Identifiability-aware uncertainty-weighted physics-informed neural networks for sparse inverse parameter estimation in advection–diffusion–reaction systems",
+      "venue": "Journal of Applied Mathematics and Computing",
+      "details": "",
+      "doi": "",
+      "url": "",
+      "note": ""
+    },
+    {
+      "id": "fno-cbf-rl-battery",
+      "type": "review",
+      "authors": "Hossain, M. A., Ahmed, N., Uddin, M., Eme, K. A., & Azhari, H. A.",
+      "corresponding": false,
+      "year": "",
+      "title": "FNO-CBF-RL for battery thermal runaway: Safe neural-operator reinforcement learning for energy-efficient cooling control",
+      "venue": "Applied Mathematics and Computation",
+      "details": "",
+      "doi": "",
+      "url": "",
+      "note": ""
+    }
+  ]
+}
