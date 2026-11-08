@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "deep-reinforcement-operator-learning",
+      "status": "current",
+      "title": "Deep Reinforcement Operator Learning for Dynamic Control",
+      "dates": "Mar 2025 – present",
+      "where": "Institute for Advanced Research, United International University · PI: Dr. Mahtab Uddin",
+      "summary": "",
+      "bullets": [
+        "Developed a physics-informed dual-critic PPO controller with a DeepONet surrogate for river-pollution control. Compared with standard PPO, it reduced integrated pollutant exceedance by 11.65% and violation duration by 10.85%, with a surrogate relative L_{2} error of 2.21% {pub:dual-critic-ppo-river-pollution}.",
+        "Extended the approach to safe control with Fourier neural operators and control barrier functions for battery thermal-runaway cooling {pub:fno-cbf-rl-battery}.",
+        "Contributed to DeepONet-guided reinforcement-learning stabilisation of the chaotic Kuramoto–Sivashinsky equation {pub:rol-kuramoto-sivashinsky}."
+      ],
+      "link": ""
+    },
+    {
+      "id": "uncertainty-aware-inverse-estimation",
+      "status": "current",
+      "title": "Uncertainty-aware inverse parameter estimation",
+      "dates": "",
+      "where": "Identifiability-aware, uncertainty-weighted PINNs for advection–diffusion–reaction systems",
+      "summary": "Recovering physical parameters from sparse, noisy observations while accounting for which parameters the data can actually identify {pub:uw-pinn-adr-inverse}.",
+      "bullets": [],
+      "link": ""
+    },
+    {
+      "id": "vision-based-robotic-teleoperation",
+      "status": "current",
+      "title": "Vision-based robotic teleoperation",
+      "dates": "Ongoing",
+      "where": "",
+      "summary": "Designed and assembled a 6-DOF aluminium manipulator (high-torque servos, ESP32 controller, PCA9685 PWM driver over I^{2}C). I am now developing stereo-camera hand tracking on an RDK X5 edge-AI computer for learning-based teleoperation.",
+      "bullets": [],
+      "link": ""
+    },
+    {
+      "id": "embedded-biomedical-ai",
+      "status": "past",
+      "title": "Embedded biomedical AI",
+      "dates": "",
+      "where": "",
+      "summary": "Evaluated a calibrated multiview ECG abnormality-screening model on embedded hardware for low-cost, on-device screening {pub:morphcal-ecg}.",
+      "bullets": [],
+      "link": ""
+    },
+    {
+      "id": "hybrid-weather-prediction",
+      "status": "past",
+      "title": "Hybrid weather prediction",
+      "dates": "",
+      "where": "",
+      "summary": "Contributed to a WRF–deep learning lightning-prediction model for hotspots in Bangladesh, funded by the Ministry of Science and Technology, Government of Bangladesh.",
+      "bullets": [],
+      "link": ""
+    },
+    {
+      "id": "atmospheric-simulation",
+      "status": "past",
+      "title": "Atmospheric simulation",
+      "dates": "",
+      "where": "",
+      "summary": "Simulated tropical cyclones with WRF and analysed their dynamical parameters.",
+      "bullets": [],
+      "link": ""
+    },
+    {
+      "id": "numerical-reduced-order-modelling",
+      "status": "past",
+      "title": "Numerical and reduced-order modelling",
+      "dates": "",
+      "where": "",
+      "summary": "Wrote a shallow-water-equation solver in Fortran; reconstructed flow fields with proper orthogonal decomposition (POD) and dynamic mode decomposition (DMD).",
+      "bullets": [],
+      "link": ""
+    },
+    {
+      "id": "multiphysics-simulation",
+      "status": "past",
+      "title": "Multiphysics simulation",
+      "dates": "",
+      "where": "",
+      "summary": "COMSOL studies of flow past multiple cylinders, heat transfer, structural response and Darcy porous-media transport; SolidWorks motion study of a slider-crank mechanism.",
+      "bullets": [],
+      "link": ""
+    }
+  ]
+}

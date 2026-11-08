@@ -61,6 +61,13 @@
       .dirty-bar.show { display: flex; }
       .note { color: var(--muted); font-size: 0.85rem; line-height: 1.55; }
       .note code { background: var(--bg); padding: 1px 4px; border-radius: 3px; }
+      .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--rule); margin-bottom: 20px; }
+      .tabs button { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 16px; border: 0; border-bottom: 2px solid transparent; background: none; color: var(--muted); cursor: pointer; }
+      .tabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+      .pending { border-color: #e8d49c; background: #fffcf2; }
+      .pending .pub-row .t { font-size: 0.95rem; }
+      .inline { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+      .inline select { width: auto; }
       [hidden] { display: none !important; }
       @media (max-width: 640px) {
         .row, .row-3 { grid-template-columns: 1fr; }
@@ -108,15 +115,29 @@
       <!-- Editor -->
       <div id="view-editor" hidden>
         <div class="admin-head">
-          <h1>Publications</h1>
+          <h1>Site admin</h1>
           <div class="actions" style="margin: 0">
-            <button class="b primary" id="add-btn">+ Add publication</button>
+            <button class="b" id="sync-btn" title="Fetch new papers and citation counts from Google Scholar and ORCID now">Sync Scholar / ORCID</button>
             <button class="b" id="yt-btn" title="Fetch the latest videos and view counts now">Refresh YouTube</button>
-            <a class="b" href="publications.html" target="_blank" rel="noopener" style="text-decoration: none">View site</a>
+            <a class="b" href="index.html" target="_blank" rel="noopener" style="text-decoration: none">View site</a>
             <button class="b" id="lock-btn">Lock</button>
           </div>
         </div>
         <div class="msg" id="editor-msg"></div>
+
+        <div class="tabs" role="tablist">
+          <button role="tab" id="tab-pubs" aria-selected="true" data-tab="pubs">Publications</button>
+          <button role="tab" id="tab-projects" aria-selected="false" data-tab="projects">Projects</button>
+        </div>
+
+        <div id="pane-pubs">
+        <div class="actions" style="margin: 0 0 16px"><button class="b primary" id="add-btn">+ Add publication</button></div>
+
+        <div class="panel pending" id="pending-panel" hidden>
+          <h2>Found on Google Scholar — waiting for your approval</h2>
+          <p class="note">These papers are on your Scholar profile but could not be matched automatically. Add them (the form tries to find the DOI) or ignore them.</p>
+          <div id="pending-rows"></div>
+        </div>
 
         <div class="panel" id="form-panel" hidden>
           <h2 id="form-title">Add publication</h2>
@@ -174,6 +195,58 @@
           <div id="pub-summary-admin" class="note" style="margin-bottom: 14px"></div>
           <div id="pub-rows"></div>
         </div>
+        </div>
+
+        <div id="pane-projects" hidden>
+          <div class="actions" style="margin: 0 0 16px"><button class="b primary" id="padd-btn">+ Add project</button></div>
+
+          <div class="panel" id="pform-panel" hidden>
+            <h2 id="pform-title">Add project</h2>
+            <div class="row-3">
+              <div>
+                <label for="p-title">Title</label>
+                <input id="p-title" type="text" />
+              </div>
+              <div>
+                <label for="p-status">Section</label>
+                <select id="p-status"></select>
+              </div>
+              <div>
+                <label for="p-dates">Dates <span class="hint">e.g. 2025 – present</span></label>
+                <input id="p-dates" type="text" />
+              </div>
+            </div>
+            <label for="p-where">Institution / PI / subtitle <span class="hint">(optional)</span></label>
+            <input id="p-where" type="text" />
+            <label for="p-summary">Description</label>
+            <textarea id="p-summary" rows="3"></textarea>
+            <label for="p-bullets">Key points <span class="hint">(optional, one per line)</span></label>
+            <textarea id="p-bullets" rows="4"></textarea>
+            <div class="inline" style="margin-top: 8px">
+              <select id="p-cite" aria-label="Insert a citation"></select>
+              <button class="b sm" id="p-cite-btn" type="button">Insert citation</button>
+              <span class="note">Adds a link like [J1] that stays correct when numbering changes. Use _{2} / ^{2} for sub/superscript.</span>
+            </div>
+            <div class="row">
+              <div>
+                <label for="p-link">Link <span class="hint">(GitHub, video… optional)</span></label>
+                <input id="p-link" type="url" placeholder="https://" />
+              </div>
+              <div>
+                <label for="p-id">Anchor ID <span class="hint">(filled from the title)</span></label>
+                <input id="p-id" type="text" spellcheck="false" />
+              </div>
+            </div>
+            <div class="preview"><div class="preview-label">Preview</div><div id="p-preview"></div></div>
+            <div class="actions">
+              <button class="b primary" id="psave-btn" type="button">Save to list</button>
+              <button class="b" id="pcancel-btn" type="button">Cancel</button>
+            </div>
+            <div class="msg" id="pform-msg"></div>
+          </div>
+
+          <div class="panel" style="margin-top: 20px"><div id="project-rows"></div></div>
+        </div>
 
         <div class="dirty-bar" id="dirty-bar">
           <span><strong>Unpublished changes.</strong> <span id="dirty-list" class="note"></span></span>
@@ -184,7 +257,7 @@
         </div>
 
         <p class="note" style="margin-top: 28px">
-          Publishing commits <code>docs/assets/data/publications.json</code> to GitHub. The live site updates in about a minute.
+          Publishing commits the data files (<code>publications.json</code>, <code>projects.json</code>) to GitHub. The live site updates in about a minute.
           <button class="b sm" id="forget-btn" style="margin-left: 6px">Forget this device</button>
         </p>
       </div>
@@ -192,6 +265,7 @@
 
     <script>window.PUBS_NO_AUTO = true;</script>
     <script src="assets/js/publications.js"></script>
+    <script src="assets/js/projects.js"></script>
     <script src="assets/js/admin.js"></script>
   </body>
 </html>

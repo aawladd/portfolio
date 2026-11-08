@@ -38,6 +38,12 @@
     if (p.doi) out.push(`<a class="badge" href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">DOI</a>`);
     if (p.url) out.push(`<a class="badge" href="${esc(p.url)}" target="_blank" rel="noopener">${/\.pdf($|\?)/i.test(p.url) ? "PDF" : "Link"}</a>`);
     if (p.note) out.push(`<span class="badge">${esc(p.note)}</span>`);
+    if (p.citations > 0) {
+      const label = `Cited by ${Number(p.citations)}`;
+      out.push(p.scholarUrl
+        ? `<a class="badge" href="${esc(p.scholarUrl)}" target="_blank" rel="noopener">${label}</a>`
+        : `<span class="badge">${label}</span>`);
+    }
     return out.length ? ` <span class="pub-links">${out.join("")}</span>` : "";
   }
 
@@ -124,7 +130,13 @@
       sections.innerHTML = sectionsHTML(data);
       if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
     }
-    if (summary) summary.innerHTML = `${esc(summaryText(data.publications, data.me))} &nbsp;|&nbsp; † corresponding author`;
+    if (summary) {
+      const sc = data.scholar;
+      const metrics = sc && sc.citations != null
+        ? `<br /><a href="${esc(sc.url)}" target="_blank" rel="noopener">Google Scholar</a>: ${Number(sc.citations)} citations · h-index ${Number(sc.hIndex)} · i10-index ${Number(sc.i10)}`
+        : "";
+      summary.innerHTML = `${esc(summaryText(data.publications, data.me))} &nbsp;|&nbsp; † corresponding author${metrics}`;
+    }
     if (recentList) recentList.innerHTML = recent(data).map((p) => `<li>${citationHTML(p, data.me)}</li>`).join("");
 
     const keyed = Object.fromEntries(withKeys(data.publications).map((p) => [p.id, p]));

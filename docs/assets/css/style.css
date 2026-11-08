@@ -210,3 +210,7 @@ a.badge:hover { background: var(--accent-soft); text-decoration: none; }
 }
 .sort-bar button:hover, .btn-plain:hover { border-color: var(--accent); color: var(--accent); }
 .sort-bar button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Justified body text (About) */
+.justify p:not(.small) { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.justify { max-width: none; }
