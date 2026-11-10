@@ -5,27 +5,27 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-09T11:28:25Z",
+  "updated": "2026-11-10T11:08:50Z",
   "videos": [
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1376,
+      "views": 1378,
       "short": true
     },
     {
       "id": "F0VfLNBV1bw",
       "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
       "published": "2025-12-27T12:59:32+00:00",
-      "views": 1345,
+      "views": 1347,
       "short": true
     },
     {
       "id": "mmvMDFCyX78",
       "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
       "published": "2025-12-26T17:54:18+00:00",
-      "views": 863,
+      "views": 865,
       "short": false
     },
     {
@@ -53,14 +53,14 @@
       "id": "XX4TB2dxLyY",
       "title": "Heat Transfer in Fluid Simulation with COMSOL.[Bangla]",
       "published": "2023-09-29T18:37:54+00:00",
-      "views": 2761,
+      "views": 2765,
       "short": false
     },
     {
       "id": "gGYptlYVnFw",
       "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
       "published": "2023-09-29T16:03:09+00:00",
-      "views": 9080,
+      "views": 9086,
       "short": false
     },
     {
@@ -74,7 +74,7 @@
       "id": "_be6g45Ux64",
       "title": "Slider Crack Simulation With Solidworks",
       "published": "2022-09-24T15:57:11+00:00",
-      "views": 629,
+      "views": 630,
       "short": true
     },
     {
@@ -109,7 +109,7 @@
       "id": "fGDQBTpD7VM",
       "title": "How to  Draw Cone With RevolutionPlot3D in Mathematica",
       "published": "2021-10-18T07:42:44+00:00",
-      "views": 4007,
+      "views": 4011,
       "short": true
     }
   ]
