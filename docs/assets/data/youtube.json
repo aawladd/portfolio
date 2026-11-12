@@ -5,27 +5,27 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-11T10:55:04Z",
+  "updated": "2026-11-12T11:04:02Z",
   "videos": [
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1381,
+      "views": 1384,
       "short": true
     },
     {
       "id": "F0VfLNBV1bw",
       "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
       "published": "2025-12-27T12:59:32+00:00",
-      "views": 1348,
+      "views": 1350,
       "short": true
     },
     {
       "id": "mmvMDFCyX78",
       "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
       "published": "2025-12-26T17:54:18+00:00",
-      "views": 869,
+      "views": 871,
       "short": false
     },
     {
@@ -53,28 +53,28 @@
       "id": "XX4TB2dxLyY",
       "title": "Heat Transfer in Fluid Simulation with COMSOL.[Bangla]",
       "published": "2023-09-29T18:37:54+00:00",
-      "views": 2766,
+      "views": 2767,
       "short": false
     },
     {
       "id": "gGYptlYVnFw",
       "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
       "published": "2023-09-29T16:03:09+00:00",
-      "views": 9088,
+      "views": 9091,
       "short": false
     },
     {
       "id": "nnkYKhh8dv0",
       "title": "Bio Fluid Problem Solve With COMSOL|| Fluid Simulation [Bangla]",
       "published": "2023-09-29T08:21:36+00:00",
-      "views": 3387,
+      "views": 3388,
       "short": false
     },
     {
       "id": "_be6g45Ux64",
       "title": "Slider Crack Simulation With Solidworks",
       "published": "2022-09-24T15:57:11+00:00",
-      "views": 631,
+      "views": 634,
       "short": true
     },
     {
@@ -109,7 +109,7 @@
       "id": "fGDQBTpD7VM",
       "title": "How to  Draw Cone With RevolutionPlot3D in Mathematica",
       "published": "2021-10-18T07:42:44+00:00",
-      "views": 4019,
+      "views": 4025,
       "short": true
     }
   ]
