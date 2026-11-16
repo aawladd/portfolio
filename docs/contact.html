@@ -125,7 +125,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <span>© 2026 Md. Awlad Hossain</span>
+        <span>© <span id="year">2026</span> Md. Awlad Hossain</span>
         <span class="footer-links">
           <a href="https://scholar.google.com/citations?user=klpg31MAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://orcid.org/0009-0008-6017-0948" target="_blank" rel="noopener">ORCID</a>
@@ -134,5 +134,6 @@
         </span>
       </div>
     </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </body>
 </html>

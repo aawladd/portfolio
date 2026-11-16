@@ -237,11 +237,16 @@ def main():
 
     # ORCID: authoritative list of DOIs
     try:
-        for w in orcid():
-            if w["doi"] and not ignored(w["title"], w["doi"]) and not find(doi=w["doi"]):
-                add_or_promote(w["doi"], w["title"])
+        works = orcid()
     except Exception as e:  # noqa: BLE001
+        works = []
         print(f"ORCID skipped: {e}", file=sys.stderr)
+    for w in works:
+        if w["doi"] and not ignored(w["title"], w["doi"]) and not find(doi=w["doi"]):
+            try:  # one failed lookup must not stop the others
+                add_or_promote(w["doi"], w["title"])
+            except Exception as e:  # noqa: BLE001
+                print(f"Could not add {w['doi']}: {e}", file=sys.stderr)
 
     # Google Scholar: citations, metrics, and anything ORCID does not know about
     try:
@@ -252,10 +257,19 @@ def main():
         for sp in papers:
             p = find(title=sp["title"])
             if not p and not ignored(sp["title"]):
-                doi = crossref_by_title(sp["title"])
+                try:  # a failed Crossref lookup falls back to Scholar's details
+                    doi = crossref_by_title(sp["title"])
+                except Exception as e:  # noqa: BLE001
+                    doi = ""
+                    print(f"Crossref title search failed: {e}", file=sys.stderr)
+                added = False
                 if doi and not ignored(sp["title"], doi):
-                    add_or_promote(doi, sp["title"])
-                else:  # no DOI anywhere: use Scholar's details as they are
+                    try:
+                        add_or_promote(doi, sp["title"])
+                        added = True
+                    except Exception as e:  # noqa: BLE001
+                        print(f"Could not add {doi}: {e}", file=sys.stderr)
+                if not added and not (doi and ignored(sp["title"], doi)):  # use Scholar's details as they are
                     venue = re.sub(r",\s*\d{4}$", "", sp["venue"]).strip()
                     taken = {x["id"] for x in pubs}
                     pid, n = slugify(sp["title"]), 2

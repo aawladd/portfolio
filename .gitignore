@@ -1,2 +1,6 @@
 # Private notes (never commit)
 SECRET_LINK.txt
+
+# Python bytecode
+__pycache__/
+*.pyc
