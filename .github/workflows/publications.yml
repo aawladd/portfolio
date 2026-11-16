@@ -2,7 +2,7 @@ name: Sync publications (Google Scholar + ORCID)
 
 on:
   schedule:
-    - cron: "41 4 * * 1" # weekly, Monday 04:41 UTC
+    - cron: "41 4 * * *" # daily, 04:41 UTC
   workflow_dispatch: # manual run (also triggered from the admin page)
 
 permissions:

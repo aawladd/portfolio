@@ -18,14 +18,14 @@ Static site served by GitHub Pages from the `docs/` folder. There is no build st
 
 | Content | Source | How often |
 | --- | --- | --- |
-| Publications, citation counts, h-index | ORCID + Google Scholar (+ Crossref for clean details) | weekly, `.github/workflows/publications.yml` |
+| Publications, citation counts, h-index | ORCID + Google Scholar (+ Crossref for clean details) | daily, `.github/workflows/publications.yml` |
 | YouTube videos and view counts | YouTube channel feed | daily, `.github/workflows/youtube.yml` |
 | Research projects | You, through the hidden project page | whenever you publish |
 
 **Publications sync:** a new DOI on ORCID is added with full details from Crossref. A manuscript under review is
 promoted automatically once it is published. Papers found only on Scholar are looked up on Crossref by title, and
 if no DOI is found they are added using Scholar's own details. Scholar has no official API and sometimes blocks
-automated requests; when that happens, only that week's citation update is skipped. To hide a paper permanently, add
+automated requests; when that happens, only that day's citation update is skipped. To hide a paper permanently, add
 its DOI (lower case) or its title (lower case, letters and digits only) to the `"ignore"` list in
 `docs/assets/data/publications.json`. Keep your ORCID record current (it can import from Crossref automatically).
 
