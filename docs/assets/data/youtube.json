@@ -5,13 +5,13 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-19T11:37:00Z",
+  "updated": "2026-11-20T11:35:50Z",
   "videos": [
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1421,
+      "views": 1427,
       "short": true
     },
     {
@@ -25,7 +25,7 @@
       "id": "mmvMDFCyX78",
       "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
       "published": "2025-12-26T17:54:18+00:00",
-      "views": 890,
+      "views": 893,
       "short": false
     },
     {
@@ -60,7 +60,7 @@
       "id": "gGYptlYVnFw",
       "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
       "published": "2023-09-29T16:03:09+00:00",
-      "views": 9110,
+      "views": 9112,
       "short": false
     },
     {
@@ -74,7 +74,7 @@
       "id": "_be6g45Ux64",
       "title": "Slider Crack Simulation With Solidworks",
       "published": "2022-09-24T15:57:11+00:00",
-      "views": 636,
+      "views": 637,
       "short": true
     },
     {
@@ -109,7 +109,7 @@
       "id": "fGDQBTpD7VM",
       "title": "How to  Draw Cone With RevolutionPlot3D in Mathematica",
       "published": "2021-10-18T07:42:44+00:00",
-      "views": 4049,
+      "views": 4052,
       "short": true
     }
   ]
