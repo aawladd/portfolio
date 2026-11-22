@@ -5,27 +5,27 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-21T10:58:29Z",
+  "updated": "2026-11-22T11:20:39Z",
   "videos": [
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1435,
+      "views": 1442,
       "short": true
     },
     {
       "id": "F0VfLNBV1bw",
       "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
       "published": "2025-12-27T12:59:32+00:00",
-      "views": 1363,
+      "views": 1364,
       "short": true
     },
     {
       "id": "mmvMDFCyX78",
       "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
       "published": "2025-12-26T17:54:18+00:00",
-      "views": 897,
+      "views": 905,
       "short": false
     },
     {
@@ -53,21 +53,21 @@
       "id": "XX4TB2dxLyY",
       "title": "Heat Transfer in Fluid Simulation with COMSOL.[Bangla]",
       "published": "2023-09-29T18:37:54+00:00",
-      "views": 2774,
+      "views": 2775,
       "short": false
     },
     {
       "id": "gGYptlYVnFw",
       "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
       "published": "2023-09-29T16:03:09+00:00",
-      "views": 9115,
+      "views": 9120,
       "short": false
     },
     {
       "id": "nnkYKhh8dv0",
       "title": "Bio Fluid Problem Solve With COMSOL|| Fluid Simulation [Bangla]",
       "published": "2023-09-29T08:21:36+00:00",
-      "views": 3399,
+      "views": 3400,
       "short": false
     },
     {
@@ -109,7 +109,7 @@
       "id": "fGDQBTpD7VM",
       "title": "How to  Draw Cone With RevolutionPlot3D in Mathematica",
       "published": "2021-10-18T07:42:44+00:00",
-      "views": 4054,
+      "views": 4057,
       "short": true
     }
   ]
