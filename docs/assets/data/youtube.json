@@ -5,27 +5,41 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-22T11:20:39Z",
+  "updated": "2026-11-23T12:33:49Z",
   "videos": [
+    {
+      "id": "1rXZo6l7PLU",
+      "title": "Pure vs Applied Math: An Animated Battle of Big Ideas",
+      "published": "2026-11-23T11:12:55+00:00",
+      "views": 0,
+      "short": false
+    },
+    {
+      "id": "GyWR0cLjyJM",
+      "title": "Fourier Series: Spinning Circles Can Draw Anything",
+      "published": "2026-11-23T07:34:29+00:00",
+      "views": 38,
+      "short": true
+    },
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1442,
+      "views": 1444,
       "short": true
     },
     {
       "id": "F0VfLNBV1bw",
       "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
       "published": "2025-12-27T12:59:32+00:00",
-      "views": 1364,
+      "views": 1366,
       "short": true
     },
     {
       "id": "mmvMDFCyX78",
       "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
       "published": "2025-12-26T17:54:18+00:00",
-      "views": 905,
+      "views": 907,
       "short": false
     },
     {
@@ -53,21 +67,21 @@
       "id": "XX4TB2dxLyY",
       "title": "Heat Transfer in Fluid Simulation with COMSOL.[Bangla]",
       "published": "2023-09-29T18:37:54+00:00",
-      "views": 2775,
+      "views": 2776,
       "short": false
     },
     {
       "id": "gGYptlYVnFw",
       "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
       "published": "2023-09-29T16:03:09+00:00",
-      "views": 9120,
+      "views": 9119,
       "short": false
     },
     {
       "id": "nnkYKhh8dv0",
       "title": "Bio Fluid Problem Solve With COMSOL|| Fluid Simulation [Bangla]",
       "published": "2023-09-29T08:21:36+00:00",
-      "views": 3400,
+      "views": 3401,
       "short": false
     },
     {
@@ -81,7 +95,7 @@
       "id": "HTD5QU9FKN4",
       "title": "3 Ways to Matrix Multiplication With Python NumPy",
       "published": "2022-07-13T02:00:07+00:00",
-      "views": 3209,
+      "views": 3210,
       "short": true
     },
     {
@@ -96,20 +110,6 @@
       "title": "QR Code Generate With Python || Python Project",
       "published": "2021-12-03T07:07:34+00:00",
       "views": 579,
-      "short": true
-    },
-    {
-      "id": "OHWPCHqNsWM",
-      "title": "How to Install Python Spyder5 IDE with just pip In Windows 11!!!!",
-      "published": "2021-11-08T15:28:09+00:00",
-      "views": 169,
-      "short": false
-    },
-    {
-      "id": "fGDQBTpD7VM",
-      "title": "How to  Draw Cone With RevolutionPlot3D in Mathematica",
-      "published": "2021-10-18T07:42:44+00:00",
-      "views": 4057,
       "short": true
     }
   ]
