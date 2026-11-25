@@ -5,41 +5,55 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-24T13:40:01Z",
+  "updated": "2026-11-25T12:51:20Z",
   "videos": [
+    {
+      "id": "9l3MJCeZi9s",
+      "title": "The $1,000,000 Spiral: Riemann Hypothesis in 40 Seconds #RiemannHypothesis #Math #manim",
+      "published": "2026-11-25T06:03:01+00:00",
+      "views": 67,
+      "short": true
+    },
+    {
+      "id": "pLxAZJfbKBk",
+      "title": "Riemann Hypothesis: Why a Million-Dollar Line Controls the Primes",
+      "published": "2026-11-25T05:59:40+00:00",
+      "views": 6,
+      "short": false
+    },
     {
       "id": "1rXZo6l7PLU",
       "title": "Pure vs Applied Math: An Animated Battle of Big Ideas",
       "published": "2026-11-23T11:12:55+00:00",
-      "views": 41,
+      "views": 113,
       "short": false
     },
     {
       "id": "GyWR0cLjyJM",
       "title": "Fourier Series: Spinning Circles Can Draw Anything",
       "published": "2026-11-23T07:34:29+00:00",
-      "views": 109,
+      "views": 300,
       "short": true
     },
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1452,
+      "views": 1458,
       "short": true
     },
     {
       "id": "F0VfLNBV1bw",
       "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
       "published": "2025-12-27T12:59:32+00:00",
-      "views": 1367,
+      "views": 1370,
       "short": true
     },
     {
       "id": "mmvMDFCyX78",
       "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
       "published": "2025-12-26T17:54:18+00:00",
-      "views": 911,
+      "views": 913,
       "short": false
     },
     {
@@ -53,7 +67,7 @@
       "id": "KkdVi_HYdl0",
       "title": "Mass-Spring-Damper Model Simulation Using Manim.",
       "published": "2024-12-13T15:29:31+00:00",
-      "views": 705,
+      "views": 706,
       "short": false
     },
     {
@@ -74,7 +88,7 @@
       "id": "gGYptlYVnFw",
       "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
       "published": "2023-09-29T16:03:09+00:00",
-      "views": 9122,
+      "views": 9123,
       "short": false
     },
     {
@@ -95,21 +109,7 @@
       "id": "HTD5QU9FKN4",
       "title": "3 Ways to Matrix Multiplication With Python NumPy",
       "published": "2022-07-13T02:00:07+00:00",
-      "views": 3211,
-      "short": true
-    },
-    {
-      "id": "I0Y65UoqljU",
-      "title": "Functions Property in 53 Seconds.",
-      "published": "2022-02-25T16:46:39+00:00",
-      "views": 515,
-      "short": true
-    },
-    {
-      "id": "-nAUa3HIg5I",
-      "title": "QR Code Generate With Python || Python Project",
-      "published": "2021-12-03T07:07:34+00:00",
-      "views": 579,
+      "views": 3213,
       "short": true
     }
   ]
