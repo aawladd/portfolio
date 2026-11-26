@@ -5,55 +5,69 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-25T12:51:20Z",
+  "updated": "2026-11-26T12:29:04Z",
   "videos": [
+    {
+      "id": "zaGy_BKIcbE",
+      "title": "Can AI Predict a Spring? Plain AI vs Physics-Informed AI",
+      "published": "2026-11-26T11:55:11+00:00",
+      "views": 0,
+      "short": true
+    },
+    {
+      "id": "mqLNYZCoqm0",
+      "title": "PINN Explained: A Neural Network That Obeys Newton's Laws",
+      "published": "2026-11-26T11:37:03+00:00",
+      "views": 0,
+      "short": false
+    },
     {
       "id": "9l3MJCeZi9s",
       "title": "The $1,000,000 Spiral: Riemann Hypothesis in 40 Seconds #RiemannHypothesis #Math #manim",
       "published": "2026-11-25T06:03:01+00:00",
-      "views": 67,
+      "views": 256,
       "short": true
     },
     {
       "id": "pLxAZJfbKBk",
       "title": "Riemann Hypothesis: Why a Million-Dollar Line Controls the Primes",
       "published": "2026-11-25T05:59:40+00:00",
-      "views": 6,
+      "views": 24,
       "short": false
     },
     {
       "id": "1rXZo6l7PLU",
       "title": "Pure vs Applied Math: An Animated Battle of Big Ideas",
       "published": "2026-11-23T11:12:55+00:00",
-      "views": 113,
+      "views": 154,
       "short": false
     },
     {
       "id": "GyWR0cLjyJM",
       "title": "Fourier Series: Spinning Circles Can Draw Anything",
       "published": "2026-11-23T07:34:29+00:00",
-      "views": 300,
+      "views": 301,
       "short": true
     },
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1458,
+      "views": 1464,
       "short": true
     },
     {
       "id": "F0VfLNBV1bw",
       "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
       "published": "2025-12-27T12:59:32+00:00",
-      "views": 1370,
+      "views": 1371,
       "short": true
     },
     {
       "id": "mmvMDFCyX78",
       "title": "ESP32-S3 MicroPython: SH1106 OLED Display + Built-in NeoPixel RGB LED",
       "published": "2025-12-26T17:54:18+00:00",
-      "views": 913,
+      "views": 915,
       "short": false
     },
     {
@@ -88,7 +102,7 @@
       "id": "gGYptlYVnFw",
       "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
       "published": "2023-09-29T16:03:09+00:00",
-      "views": 9123,
+      "views": 9125,
       "short": false
     },
     {
@@ -97,20 +111,6 @@
       "published": "2023-09-29T08:21:36+00:00",
       "views": 3403,
       "short": false
-    },
-    {
-      "id": "_be6g45Ux64",
-      "title": "Slider Crack Simulation With Solidworks",
-      "published": "2022-09-24T15:57:11+00:00",
-      "views": 637,
-      "short": true
-    },
-    {
-      "id": "HTD5QU9FKN4",
-      "title": "3 Ways to Matrix Multiplication With Python NumPy",
-      "published": "2022-07-13T02:00:07+00:00",
-      "views": 3213,
-      "short": true
     }
   ]
 }
