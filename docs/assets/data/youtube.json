@@ -5,62 +5,76 @@
     "url": "https://www.youtube.com/@FunctionalValue"
   },
   "source": "rss",
-  "updated": "2026-11-27T12:14:51Z",
+  "updated": "2026-11-28T11:42:36Z",
   "videos": [
+    {
+      "id": "YfeydBB8P_Q",
+      "title": "This AI Never Saw the Pressure... and Drew It Anyway (PINN)",
+      "published": "2026-11-27T18:27:04+00:00",
+      "views": 583,
+      "short": true
+    },
+    {
+      "id": "A_h-BeVI8LE",
+      "title": "Physics-Informed Neural Networks for Fluid Dynamics (PINN + Navier-Stokes)",
+      "published": "2026-11-27T18:25:11+00:00",
+      "views": 24,
+      "short": false
+    },
     {
       "id": "zaGy_BKIcbE",
       "title": "Can AI Predict a Spring? Plain AI vs Physics-Informed AI",
       "published": "2026-11-26T11:55:11+00:00",
-      "views": 884,
+      "views": 1223,
       "short": true
     },
     {
       "id": "mqLNYZCoqm0",
       "title": "PINN Explained: A Neural Network That Obeys Newton's Laws",
       "published": "2026-11-26T11:37:03+00:00",
-      "views": 10,
+      "views": 17,
       "short": false
     },
     {
       "id": "9l3MJCeZi9s",
       "title": "The $1,000,000 Spiral: Riemann Hypothesis in 40 Seconds #RiemannHypothesis #Math #manim",
       "published": "2026-11-25T06:03:01+00:00",
-      "views": 613,
+      "views": 616,
       "short": true
     },
     {
       "id": "pLxAZJfbKBk",
       "title": "Riemann Hypothesis: Why a Million-Dollar Line Controls the Primes",
       "published": "2026-11-25T05:59:40+00:00",
-      "views": 29,
+      "views": 35,
       "short": false
     },
     {
       "id": "1rXZo6l7PLU",
       "title": "Pure vs Applied Math: An Animated Battle of Big Ideas",
       "published": "2026-11-23T11:12:55+00:00",
-      "views": 157,
+      "views": 162,
       "short": false
     },
     {
       "id": "GyWR0cLjyJM",
       "title": "Fourier Series: Spinning Circles Can Draw Anything",
       "published": "2026-11-23T07:34:29+00:00",
-      "views": 304,
+      "views": 306,
       "short": true
     },
     {
       "id": "CqIEJYAz71w",
       "title": "Checking PWM Signal with FNIRSI DSO-TC4 | 50Hz Servo Tester #Shorts #fnirsi #pwm",
       "published": "2026-03-17T19:31:50+00:00",
-      "views": 1467,
+      "views": 1470,
       "short": true
     },
     {
       "id": "F0VfLNBV1bw",
       "title": "ESP32-S3 Graph Calculator on SH1106 OLED (MicroPython)",
       "published": "2025-12-27T12:59:32+00:00",
-      "views": 1374,
+      "views": 1377,
       "short": true
     },
     {
@@ -96,20 +110,6 @@
       "title": "Heat Transfer in Fluid Simulation with COMSOL.[Bangla]",
       "published": "2023-09-29T18:37:54+00:00",
       "views": 2778,
-      "short": false
-    },
-    {
-      "id": "gGYptlYVnFw",
-      "title": "Darcy's Law(Porous Medium), Chemical Transport Simulation With COMSOL Multiphysics.|[Bangla]",
-      "published": "2023-09-29T16:03:09+00:00",
-      "views": 9128,
-      "short": false
-    },
-    {
-      "id": "nnkYKhh8dv0",
-      "title": "Bio Fluid Problem Solve With COMSOL|| Fluid Simulation [Bangla]",
-      "published": "2023-09-29T08:21:36+00:00",
-      "views": 3403,
       "short": false
     }
   ]
